@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+
+  padding-left: 20px;
+
+  padding-top: 137px;
+  padding-bottom: 160px;
+
+  background-color: #ffb8ca;
+
+  //   Мы работаем "идеально - pixel-perfect" или нет?
+  // В макете шарик под морожкой - 346*344 / 324*322 / 538*538 ?
+  // Предлагаю исправить на одинаковый 346*346 / 324*324 / 538*538
+  background-image: url(../images/andrew/ellipse-3.svg);
+  background-position: left 36px top 27px;
+  background-size: 344px 344px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.hero-title {
+  position: relative;
+
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  max-width: 218px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  z-index: 2;
+}
+
+.hero-title-accent {
+  color: #d41443;
+  font-size: 48px;
+  line-height: 96.5%;
+}
+
+.hero-icecrem {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 1;
+}
+
+// можливо кнопки винести в окремий scss ?
+.btn {
+  position: relative; //z index працює тільки з позішин релатів
+  border: none;
+  cursor: pointer;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.3;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.btn3 {
+  color: #ffffff;
+  background-color: #d41443;
+}
+
+.bnt2 {
+  color: #d41443;
+  background-color: #ffffff;
+}
