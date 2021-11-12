@@ -1,0 +1,89 @@
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &--no-padding-top {
+    padding-top: 0;
+  }
+
+  &--reviews-padding-bottom {
+    padding-bottom: 170px;
+  }
+
+  &--contacts-padding-bottom {
+    padding-bottom: 115px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 125px;
+    padding-bottom: 125px;
+
+    &--reviews-padding-bottom {
+      padding-bottom: 230px;
+    }
+
+    &--contacts-padding-bottom {
+      padding-bottom: 165px;
+    }
+  }
+}
+
+.section--background {
+  background-color: $sections-background;
+}
+
+.section__title {
+  margin-bottom: 30px;
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 58px;
+  }
+}
+
+.section__subtitle {
+  margin-bottom: 15px;
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color-secondary;
+
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+  }
+}

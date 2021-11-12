@@ -1,7 +1,17 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './base/base';
+@import './base/section';
+@import './base/container';
+@import './components/buttons';
+@import './components/modal';
+@import './components/mobile-menu';
+@import './sections/site-header';
+@import './sections/hero';
+@import './sections/products';
+@import './sections/about';
+@import './sections/advantages';
+@import './sections/gallery';
+@import './sections/customer-reviews';
+@import './sections/contacts';
+@import './sections/site-footer';
