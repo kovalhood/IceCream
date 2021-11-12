@@ -3,16 +3,33 @@
 .hero {
   position: relative;
 
+  padding-left: 20px;
+
   padding-top: 137px;
   padding-bottom: 160px;
 
   background-color: $hero-background;
+  background-image: url(../../src/images/common/ellipse.svg);
+
+  background-position: left 137px top 27px;
+  background-size: 344px 344px;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 15px;
+    padding-left: 34px;
+    padding-bottom: 59px;
+    background-size: 324px 324px;
+    background-position: left 307px top -31px;
+  }
 }
 
 .hero-title {
   position: relative;
 
   font-family: Titan One;
+  font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
@@ -23,84 +40,56 @@
   text-transform: uppercase;
   margin-bottom: 19px;
 
-  z-index: 3;
+  z-index: 2;
 
   @media screen and (min-width: $tablet) {
     font-size: 22px;
     max-width: 162px;
-    margin-bottom: 12px;
-
-    font-size: 22px;
-    line-height: 1.14;
   }
 }
 
 .hero-title-accent {
   color: $accent-color;
   font-size: 48px;
-  line-height: 0.965;
+  line-height: 96.5%;
   @media screen and (min-width: $tablet) {
     font-size: 34px;
-    line-height: 0.905;
   }
 }
 .hero-img-icecrem {
   position: absolute;
-  bottom: -160px;
+  bottom: 0;
   right: 32px;
-  z-index: 2;
-
+  z-index: 1;
   @media screen and (min-width: $tablet) {
-    bottom: -34px;
-    right: 247px;
+    right: 378px;
+
     width: 143px;
     height: 336px;
   }
-  @media screen and (min-width: $desktop) {
-    right: 450px;
-  }
 }
 
-.ellipse {
-  position: absolute;
-  left: 35px;
-  bottom: -85px;
-
-  height: 346px;
-  width: 346px;
-  border-radius: 50%;
-  background-color: $accent-color-secondary;
-
-  z-index: 1;
-  @media screen and (min-width: $tablet) {
-    left: 307px;
-    bottom: -46px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    left: 475px;
-    bottom: -75px;
-  }
-}
+// можливо кнопки винести в окремий scss ?
 
 .hero-btn-wrapper {
   display: flex;
 }
-.hero-title-number-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.hero-numbers-wrapper {
-  position: relative;
-  z-index: 3;
+
+.numbers-wrapper {
+  position: absolute;
+  top: 74px;
+  right: 32px;
+  z-index: 1;
   text-align: right;
+
   @media screen and (max-width: $tablet) {
     display: none;
   }
 }
-
-.hero-number {
+.number {
   font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
   font-size: 28px;
   line-height: 1.145;
 
@@ -110,51 +99,18 @@
 
   color: $accent-color;
 }
-.hero-number::after {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: $white-color;
 
-  position: absolute;
-  transform: translate(-50%, -25%);
-  z-index: -1;
-}
-
-.hero-number-text {
+.number-text {
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
 
   color: $white-color;
-  margin-bottom: 14px;
 }
-.hero-number-text:last-child {
-  margin-bottom: 0;
-}
-
-.hero-txt {
-  // position: relative;
-  margin-left: 120px;
-  font-size: 8px;
-  line-height: 1.5;
-  color: $white-color;
-  max-width: 114px;
-
-  z-index: 3;
-  @media screen and (max-width: $tablet) {
-    display: none;
-  }
-}
-
 .hero-img-milk {
-  // position: absolute;
-  // display: flex;
-  // justify-content: start;
-  margin-top: -114px;
-  // left: 34px;
+  position: absolute;
+  bottom: 10px;
+  left: 32px;
   z-index: 1;
   @media screen and (max-width: $tablet) {
     display: none;
@@ -163,16 +119,27 @@
 
 .hero-img-girl {
   position: absolute;
-  display: none;
-
-  @media screen and (min-width: $tablet) {
-    display: block;
-    bottom: -35px;
-    right: 35px;
-    z-index: 2;
+  bottom: 1px;
+  right: 34px;
+  z-index: 2;
+  @media screen and (max-width: $tablet) {
+    display: none;
   }
+}
 
-  @media screen and (min-width: $desktop) {
-    right: 110px;
+.hero-txt {
+  margin-top: 66px;
+  margin-left: 120px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $white-color;
+  max-width: 114px;
+
+  @media screen and (max-width: $tablet) {
+    display: none;
   }
 }
