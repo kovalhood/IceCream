@@ -3,25 +3,44 @@
 .hero {
   position: relative;
 
-  padding-left: 20px;
+  // padding-left: 20px;
 
   padding-top: 137px;
   padding-bottom: 160px;
 
   background-color: $hero-background;
-  background-image: url(../../src/images/common/ellipse.svg);
+  // background-image: url(../../src/images/common/ellipse.svg);
 
-  background-position: left 137px top 27px;
-  background-size: 344px 344px;
-  background-repeat: no-repeat;
-  z-index: 1;
+  // background-position: left 36px top 27px;
+  // background-size: 344px 344px;
+  // background-repeat: no-repeat;
+  // z-index: 1;
 
   @media screen and (min-width: $tablet) {
     padding-top: 15px;
-    padding-left: 34px;
+    // padding-left: 34px;
     padding-bottom: 59px;
-    background-size: 324px 324px;
-    background-position: left 307px top -31px;
+    // background-size: 324px 324px;
+    // background-position: left 307px top -31px;
+  }
+}
+.hero-ellipse {
+  position: fixed;
+  width: 346px;
+  height: 346px;
+
+  top: 27px;
+  left: 36px;
+  z-index: 1;
+
+  // overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    top: -32px;
+    left: 137px;
+
+    width: 324px;
+    height: 324px;
   }
 }
 
@@ -40,7 +59,7 @@
   text-transform: uppercase;
   margin-bottom: 19px;
 
-  z-index: 2;
+  z-index: 3;
 
   @media screen and (min-width: $tablet) {
     font-size: 22px;
@@ -60,7 +79,7 @@
   position: absolute;
   bottom: 0;
   right: 32px;
-  z-index: 1;
+  z-index: 2;
   @media screen and (min-width: $tablet) {
     right: 378px;
 
@@ -69,13 +88,11 @@
   }
 }
 
-// можливо кнопки винести в окремий scss ?
-
 .hero-btn-wrapper {
   display: flex;
 }
 
-.numbers-wrapper {
+.hero-numbers-wrapper {
   position: absolute;
   top: 74px;
   right: 32px;
@@ -86,7 +103,7 @@
     display: none;
   }
 }
-.number {
+.hero-number {
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -100,7 +117,7 @@
   color: $accent-color;
 }
 
-.number-text {
+.hero-number-text {
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
@@ -128,17 +145,17 @@
 }
 
 .hero-txt {
+  position: relative;
+
   margin-top: 66px;
   margin-left: 120px;
 
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 8px;
   line-height: 1.5;
   color: $white-color;
   max-width: 114px;
 
+  z-index: 3;
   @media screen and (max-width: $tablet) {
     display: none;
   }
