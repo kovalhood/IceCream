@@ -4,7 +4,6 @@
 // Сетку задаем с помощью отрицательных margin
 
 .about {
-    position: relative;
     background-color: $sections-background;
 }
 
@@ -58,34 +57,41 @@ img {
     line-height: 162%;
 
     color: $text-black-secondary;
+
+    
 }
 
-.about__item--color {
+.about__text--color {
     color: $text-black;
     margin-bottom: 47px;
 }
 
-.about__item:last-child {
+.about__text--last-p {
     margin-top: 20px;
 }
 
 .about--background-img {
     @media screen and (max-width: $mobile) {
-        position: absolute;
-        bottom: 0;
-        
-        margin-left: -20px;
-
-        width: 100%;
-        height: 266px;
-
-        transform: translateY(-5%);
         background-image: url(../../../../HW/icecream/src/images/mob/about/mob-about-backgroundimg.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+
+        width: 100vw;
+        height: 133px;
+        
+        margin-top: -133px;
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @media screen and (min-width: 393px) {
+            height: 165px;
+        }
 
         @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
             background-image: url(../../../../HW/icecream/src/images/mob/about/mob-about-backgroundimg-2x.png);
         }
+    }
+    @media screen and (min-width: 481px) {
+        display: none;
     }
 }
