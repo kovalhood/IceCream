@@ -18,24 +18,43 @@
 <header class="page-header">
   <div class="container">
     <nav class="page-header__nav">
-      <ul class="page-header__nav-list list">
         <a href="">
           <picture>
             <source srcset="/images/common/logo.png 1x, /images/common/logo@2x.png" type="" media="(min-width: 280px)" />
             <img class="page-header__img" src="/images/common/logo.png" alt="Логотип Icecream" />
           </picture>
         </a>
+        <ul class="page-header__nav-list list">
         <li class="page-header__nav-item"><a href="./index.html" class="link current page-header__nav-link">Home</a></li>
         <li class="page-header__nav-item"><a href="#About us" class="link page-header__nav-link">About us</a></li>
         <li class="page-header__nav-item"><a href="#How it’s made?" class="link page-header__nav-link">How it’s made?</a></li>
         <li class="page-header__nav-item"><a href="#Our products" class="link page-header__nav-link">Our products</a></li>
-        <li class="page-header__nav-item"><a href="#contacts" class="link page-header__nav-link">Contact</a></li>
+        <li class="page-header__nav-item"><a href="#Contact" class="link page-header__nav-link">Contact</a></li>
         <button class="header__button" type="button"></button>
       </ul>
-
     </nav>
   </div>
+  <button type="button" class="menu-btn menu-btn--open js-open-menu" aria-expanded="false">
+    <img class="menu-icon" src="/images/common/menu.png" width="20" height="12" aria-label="Открывает мобильное меню"/>
+  </button>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button class="header-mobile-button" type="button"></button>
+    <ul class="mobile-menu-list list">
+      <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link mob-current">Home</a></li>
+      <li class="mobile-menu-item"><a href="About us" class="mobile-menu-link link">About us</a></li>
+      <li class="mobile-menu-item"><a href="#How it’s made?" class="mobile-menu-link link">How it’s made?</a></li>
+      <li class="mobile-menu-item"><a href="#Our products" class="mobile-menu-link link">Our products</a></li>
+      <li class="mobile-menu-item"><a href="#Contact" class="mobile-menu-link link">Contact</a></li>
+    </ul>
+      <button type="button" class="menu-btn menu-btn--close js-close-menu" aria-expanded="true">
+        <img class="menu-icon" src="/images/common/close.png" width="13.48" height="14" aria-label="Закрыввает мобильное меню"/>
+  </button>
+  </div>
 </header>
+<script src="/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
 </body>
 </html>
 

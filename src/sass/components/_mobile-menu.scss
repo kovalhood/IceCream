@@ -1,1 +1,103 @@
 // Это меню для планшета и телефона одинаковы, главное указать width:100vh;
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(100%);
+  width: 100vw;
+  height: 100vh;
+  padding: 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $mobile-menu-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  flex-direction: column;
+  z-index: 999;
+  text-align: start;
+  transition: transform 250ms ease-in-out;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  cursor: pointer;
+  color: $mobile-menu-color;
+  &--open {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+.menu-icon {
+  fill: currentColor;
+}
+
+.menu-icon:hover,
+.menu-icon:focus {
+  color: $accent-color;
+}
+
+.mobile-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile-menu-item:hover,
+  .mobile-menu-item:focus {
+    color: $accent-color;
+  }
+}
+
+.mobile-menu-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: $white-color;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: $accent-color;
+}
+
+.mob-current {
+  color: $accent-color;
+}
+
+.header-mobile-button {
+  position: absolute;
+  width: 186px;
+  height: 44px;
+  left: 34px;
+  top: 60px;
+
+  background: $white-color;
+  border-radius: 22px;
+}
