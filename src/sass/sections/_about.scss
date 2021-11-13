@@ -61,12 +61,12 @@ img {
     
 }
 
-.about__text--color {
+.about__item:first-child {
     color: $text-black;
     margin-bottom: 47px;
 }
 
-.about__text--last-p {
+.about__item:last-child {
     margin-top: 20px;
 }
 
@@ -91,6 +91,7 @@ img {
             background-image: url(../../../../HW/icecream/src/images/mob/about/mob-about-backgroundimg-2x.png);
         }
     }
+    
     @media screen and (min-width: 481px) {
         display: none;
     }
