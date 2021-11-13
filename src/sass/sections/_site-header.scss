@@ -1,4 +1,37 @@
-// Меню для desktop скрывать в версиях для планшета и мобилки, там прописать отдельным кодом меню (как в мастерской Репеты)
+/*// Меню для desktop скрывать в версиях для планшета и мобилки, там прописать отдельным кодом меню (как в мастерской Репеты)*/
 
-// Кнопку создавать не надо, ее потом отдельно сбросит Юлия, ее надо будет вставить 2 раза (сначала без модального окна, а потом с ним)
-// Размещать кнопку на странице с помощью scss (margin и прочеее) будете сами, у нее будет только дизайн
+/*// Кнопку создавать не надо, ее потом отдельно сбросит Юлия, ее надо будет вставить 2 раза (сначала без модального окна, а потом с ним)*/
+// Размещать кнопку на странице с помощью scss (margin и прочеее) будете сами, у нее будет только дизайн*/
+
+.page-header {
+  display: flex;
+  align-items: center;
+
+  &__nav {
+    display: flex;
+  }
+}
+
+.page-header__nav-list {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+}
+.page-header__nav-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.page-header__nav-link {
+  color: $white-color;
+  padding-top: 50px;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-header__nav-link:hover,
+.pageheader__nav-link:focus,
+.link.current {
+  color: $accent-color;
+}
