@@ -1,0 +1,39 @@
+.advantages-section {
+    background-color: $sections-background;
+}
+
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-item-title {
+    color: $accent-color;
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 104px;
+    margin-bottom: 20px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../../images/common/advantages/desktop-about-icon1.png );
+    }
+}
+
+.advantages-item-text {
+    color: $text-black;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.6;
+    
+    @media screen and (max-width: $mobile) {
+        max-width: 230px;
+      }
+}
