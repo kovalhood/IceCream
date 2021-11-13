@@ -1,20 +1,27 @@
 <section class="section section--reviews-padding-bottom">
   <div class="container">
-    <article>
+    <article class="review">
       <picture>
         <source
           srcset="
-            ./images/common/review-customer1.png    1x,
-            ./images/common/review-customer1-2x.png 2x
+            ./images/common/reviews/review-customer1.png    1x,
+            ./images/common/reviews/review-customer1-2x.png 2x
           "
         />
-        <img src="./images/common/review-customer1.png" alt="Reviewer-1" />
+        <img
+          src="./images/common/reviews/review-customer1.png"
+          class="review__image img"
+          alt="Reviewer-1"
+        />
       </picture>
-      <p>
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-      </p>
-      <h3>Emily, Los Angeles</h3>
+      <div class="review__card">
+        <p class="review__text">
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+        </p>
+      </div>
+      <div class="review__dot"></div>
+      <h3 class="review__customer">Emily, Los Angeles</h3>
     </article>
   </div>
 </section>
