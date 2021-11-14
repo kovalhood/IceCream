@@ -43,15 +43,43 @@
 .slick-arrow.slick-disabled {
 }
 /* Точки (булиты) */
+ul.slick-dots {
+  margin: 0;
+  padding: 0;
+}
+
 .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
 }
 /* Активная точка */
 .slick-dots li.slick-active {
 }
 /* Элемент точки */
 .slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: $review-switch;
+}
+
+.slick-dots li.slick-active button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url('../images/common/reviews/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .reviews_item {
@@ -181,5 +209,13 @@
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 15px;
+  }
+}
+
+.reviews__customer {
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
   }
 }
