@@ -36,14 +36,14 @@
 
   min-height: 400px;
   background-color: $white-color;
-  box-shadow: 0px 8px 30px rgba(250, 20, 67, 0.1);
+  box-shadow: 0 8px 30px rgba(250, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     max-width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 528px;
     min-height: 581px;
   }
@@ -84,7 +84,7 @@
   text-align: center;
   color: #e17992;
   margin-bottom: 12px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     line-height: 1.15;
   }
 }
@@ -190,7 +190,7 @@
   .modal-checkbox:focus + & .check-text-icon {
     border: 2px solid $accent-color;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 30px;
@@ -225,9 +225,16 @@
    }
  }
 
- .modal-btn-icon {
-   margin-left: 12px;
+ #googlemap {
+   height: 500px;
+   /* The height is 400 pixels */
+   width: 100%;
+   /* The width is the width of the web page */
  }
+
+ //.modal-btn-icon {
+ //  margin-left: 12px;
+ //}
 
 
 // Тут прописать код для модалки в Products (3 штуки с разными текстами)
