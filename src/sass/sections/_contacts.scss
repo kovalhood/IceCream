@@ -12,8 +12,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../images/desktop/contacts/desktop-contacts-backgroundimg@2x.png),
+    background-image: url(../images/desktop/contacts/desktop-contacts-backgroundimg.png),
       linear-gradient(180deg, rgba(255, 255, 255, 0.01) 25%, rgba(255, 245, 246, 1) 25%);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/contacts/desktop-contacts-backgroundimg-2x.png),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.01) 25%, rgba(255, 245, 246, 1) 25%);
+    }
   }
 }
 
