@@ -3,14 +3,6 @@
 /*// Кнопку создавать не надо, ее потом отдельно сбросит Юлия, ее надо будет вставить 2 раза (сначала без модального окна, а потом с ним)*/
 // Размещать кнопку на странице с помощью scss (margin и прочеее) будете сами, у нее будет только дизайн*/
 
-/*.page-header {
-  display: flex;
-  align-items: center;
-
-  /* &__nav {
-    background-color: $hero-background;
-  }*/
-
 * {
   margin: 0;
   padding: 0;
@@ -22,15 +14,11 @@ img {
   margin: 0;
 }
 
-/*.page-header__nav {
-  display: inline;
-}*/
-
 .page-header__nav-list {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     padding-top: 50px;
     font-style: normal;
@@ -60,34 +48,27 @@ img {
 .page-header__img {
   display: block;
   padding-top: 14px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 45px;
     padding-left: 20px;
     padding-right: 61px;
   }
-
-  /*@media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-right: 291px;
   }
-  @media screen and (min-width: 1200px) {
-    /*padding-left: 10px; /*46*/
-  /*padding-right: 110px; /*110*/
-  /*margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    @media screen and (min-width: 768px) {
-      margin-right: 88px;
-    }*/
+
+  @media screen and (min-width: 768px) {
+    margin-right: 27px; /*88px;*/
+  }
 }
 
 .header__button {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 10px; /*110*/
     width: 159px;
     height: 44px;
     top: 38px;
     background: $white-color;
-    fill: $accent-color-secondary;
     border-radius: 22px;
     cursor: pointer;
     display: inline;
@@ -96,23 +77,35 @@ img {
 
 .header__button:hover,
 .header__button:focus {
-  color: $accent-color-secondary;
+  background-color: $accent-color-secondary;
 }
 
 .header-tablet-button {
-  @media screen and(max-width: 767px) {
+  @media screen and(max-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 159px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    position: absolute;
+    width: 160px;
     height: 44px;
-    top: 38px;
+    right: 24px;
+    top: 20px;
     display: inline;
-    background: #212121;
     border-radius: 22px;
     cursor: pointer;
+
+    margin: 0 auto 20px;
+    padding: 0;
+    background: $text-black-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    justify-content: center;
+    color: #d41443;
+    transition: background-color 0.3s ease-out;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }

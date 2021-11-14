@@ -1,7 +1,6 @@
 // Это меню для планшета и телефона одинаковы, главное указать width:100vh;
 .mobile-menu {
   position: fixed;
-  left: 0;
   top: 0;
   transform: translateX(100%);
   width: 100vw;
@@ -17,9 +16,10 @@
   text-align: start;
   transition: transform 250ms ease-in-out;
   @media screen and (min-width: 768px) {
-    width: 100vw;
+    right: 0;
+    width: 350px;
   }
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1279px) {
     display: none;
   }
 }
@@ -31,18 +31,20 @@
 .menu-btn {
   width: 40px;
   height: 40px;
-  /* display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;*/
   border: none;
   outline: none;
   margin-left: auto;
   cursor: pointer;
   color: $mobile-menu-color;
+
   &--open {
     @media screen and (min-width: 1199px) {
       display: none;
+    }
+    @media screen and (min-width: 768px) {
+      position: relative;
+      top: 20px;
+      right: 90px;
     }
     position: absolute;
     top: 20px;
@@ -54,6 +56,11 @@
     right: 20px;
   }
 }
+.menu-btn:focus,
+.menu-btn:hover {
+  color: red;
+}
+
 .menu-icon {
   fill: currentColor;
 }
@@ -85,7 +92,7 @@
   font-size: 14px;
   line-height: 1.2;
   display: flex;
-  align-items: center;
+  outline: none;
   letter-spacing: 0.02em;
   color: $white-color;
 }
@@ -103,7 +110,7 @@
   display: flex;
   text-align: center;
   margin: auto;
-  width: 186px;
+  width: 209px;
   height: 44px;
   left: 34px;
   top: 60px;
@@ -118,6 +125,15 @@
   line-height: 1.3;
   align-items: center;
   color: $accent-color;
+
+  margin: 0 auto 20px;
+  padding: 0;
+  justify-content: center;
+  color: #d41443;
+  transition: background-color 0.3s ease-out;
+  @media screen and(min-width: 768px) {
+    width: 186px;
+  }
 }
 
 button {
@@ -131,10 +147,4 @@ button {
 
 img {
   margin: 0;
-}
-
-.header-lines {
-  text-align: start;
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
