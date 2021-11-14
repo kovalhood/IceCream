@@ -5,6 +5,20 @@
 .advantages-list {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        margin-left: -60px;
+    }
+}
+
+.advantages-item {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        flex-basis: calc(100% / 3 - 60px);
+        margin-left: 60px;
+        // margin-bottom: 30px;
+      }
 }
 
 .advantages-item-title {
@@ -17,7 +31,8 @@
     text-transform: uppercase;
     margin-top: 104px;
     margin-bottom: 20px;
-    position: relative;
+    
+    
 }
 
 .advantages-logo-milk {
