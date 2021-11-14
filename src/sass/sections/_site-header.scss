@@ -15,7 +15,7 @@ img {
 }
 
 .page-header__nav-list {
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1280px) {
     display: none;
   }
   @media screen and (min-width: 1280px) {
@@ -40,7 +40,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-header__nav-link:hover,
-.pageheader__nav-link:focus,
+.page-header__nav-link:focus,
 .link.current {
   color: $accent-color;
 }
@@ -48,17 +48,14 @@ img {
 .page-header__img {
   display: block;
   padding-top: 14px;
+  @media screen and (min-width: 768px) {
+    margin-right: 27px; /*88px;*/
+    padding-right: 291px;
+  }
   @media screen and (min-width: 1280px) {
     padding-top: 45px;
     padding-left: 20px;
     padding-right: 61px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-right: 291px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 27px; /*88px;*/
   }
 }
 
@@ -71,7 +68,6 @@ img {
     background: $white-color;
     border-radius: 22px;
     cursor: pointer;
-    display: inline;
   }
 }
 
@@ -80,11 +76,11 @@ img {
   background-color: $accent-color-secondary;
 }
 
-.header-tablet-button {
+.page-header__tablet-button {
   @media screen and(max-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     position: absolute;
     width: 160px;
     height: 44px;

@@ -17,9 +17,9 @@
   transition: transform 250ms ease-in-out;
   @media screen and (min-width: 768px) {
     right: 0;
-    width: 350px;
+    width: 310px;
   }
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -38,27 +38,23 @@
   color: $mobile-menu-color;
 
   &--open {
-    @media screen and (min-width: 1199px) {
-      display: none;
-    }
-    @media screen and (min-width: 768px) {
-      position: relative;
-      top: 20px;
-      right: 90px;
-    }
     position: absolute;
     top: 20px;
     right: 20px;
+    @media screen and (min-width: 768px) {
+      position: relative;
+      top: 20px;
+      right: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
   &--close {
     position: absolute;
     top: 20px;
     right: 20px;
   }
-}
-.menu-btn:focus,
-.menu-btn:hover {
-  color: red;
 }
 
 .menu-icon {
@@ -70,23 +66,23 @@
   color: $accent-color;
 }
 
-.mobile-menu-item {
+.mobile-menu__item {
   margin-top: 22px;
   &:not(:last-child) {
     margin-bottom: 22px;
   }
-  .mobile-menu-item:hover,
-  .mobile-menu-item:focus {
+  .mobile-menu__item:hover,
+  .mobile-menu__item:focus {
     color: $accent-color;
   }
 }
 
-.mobile-menu-list {
+.mobile-menu__list {
   display: block;
   margin-top: 32px;
 }
 
-.mobile-menu-link {
+.mobile-menu__link {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -97,8 +93,8 @@
   color: $white-color;
 }
 
-.mobile-menu-link:hover,
-.mobile-menu-link:focus {
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
   color: $accent-color;
 }
 
@@ -129,8 +125,6 @@
   margin: 0 auto 20px;
   padding: 0;
   justify-content: center;
-  color: #d41443;
-  transition: background-color 0.3s ease-out;
   @media screen and(min-width: 768px) {
     width: 186px;
   }
