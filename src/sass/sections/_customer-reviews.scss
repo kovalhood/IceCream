@@ -1,10 +1,10 @@
-.review {
+.reviews_item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.review__image {
+.reviews__image {
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
@@ -16,7 +16,7 @@
   }
 }
 
-.review__card {
+.reviews__card {
   position: relative;
   background-color: #fafafa;
   max-width: 280px;
@@ -57,7 +57,7 @@
   }
 }
 
-.review__text {
+.reviews__text {
   position: relative;
   font-weight: 500;
   font-size: 12px;
@@ -92,7 +92,7 @@
   }
 }
 
-.review__dot {
+.reviews__dot {
   position: relative;
   width: 4px;
   height: 4px;
