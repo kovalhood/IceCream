@@ -2,6 +2,7 @@
 // Кнопкам не надо прописывать положение на странице, это потом люди в своих блоках сделают. Тут только дизайн
 
 .btn {
+  height: 44px;
   border: none;
   cursor: pointer;
 }
@@ -10,7 +11,6 @@
 
 .header__btn {
     min-width: 159px;
-    height: 44px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.31;
@@ -110,3 +110,37 @@
 // Тут прописать код для кнопок в About (1 кнопка)
 
 // Тут прописать код для кнопок в Contacts (2 кнопки)
+
+.contacts__btn{
+  min-width: 160px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+
+  padding: 0 37px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts__btn-locations {
+  color: $white-color;
+  background-color: $accent-color;
+}
+
+.contacts__btn-franchise {
+  color: $accent-color;
+  background-color:$white-color;
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
+
+.modal-btn-icon {
+  margin-left: 12px;
+}

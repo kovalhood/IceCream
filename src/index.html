@@ -21,6 +21,27 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 50.50, lng: 30.42 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("googlemap"), {
+          zoom: 12,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+<!--    <script src="./js/init-google-map.js"></script>-->
+
+
   </head>
   <body>
     <include src="./partials/site-header.html"></include>
@@ -35,10 +56,13 @@
     <include src="./partials/modal.html"></include>
     <include src="./partials/buttons.html"></include>
 
-
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACYuAn583hgcFF_IPclYTF3Rmmc8STbDc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
     <script src="./js/slick-script.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
