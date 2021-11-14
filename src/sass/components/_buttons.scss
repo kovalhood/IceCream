@@ -85,9 +85,19 @@
     background-size: cover;
   }
 
+.hero__round-button {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
 .hero__round-button-size {
-  width: 26px;
-  height: 26px;
+  width: 18px;
+  height: 18px;
+   @media screen and (min-width: $desktop) {
+     width: 26px;
+     height: 26px;
+    }
 }
 
 .products__round-button-size {
