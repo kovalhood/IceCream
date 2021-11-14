@@ -9,29 +9,29 @@
   padding-bottom: 160px;
 
   background-color: $hero-background;
-  // background-image: url(../../src/images/common/ellipse.svg);
+  background-image: url(../../src/images/common/ellipse.svg);
 
-  // background-position: left 36px top 27px;
-  // background-size: 344px 344px;
-  // background-repeat: no-repeat;
-  // z-index: 1;
+  background-position: left 36px top 27px;
+  background-size: 344px 344px;
+  background-repeat: no-repeat;
+  z-index: 1;
 
   @media screen and (min-width: $tablet) {
     padding-top: 15px;
-    // padding-left: 34px;
+    padding-left: 34px;
     padding-bottom: 59px;
-    // background-size: 324px 324px;
-    // background-position: left 307px top -31px;
+    background-size: 324px 324px;
+    background-position: left 307px top -31px;
   }
 }
 .hero-ellipse {
-  position: fixed;
+  position: absolute;
   width: 346px;
-  height: 346px;
 
   top: 27px;
   left: 36px;
   z-index: 1;
+  // margin-right: -62px;
 
   // overflow: hidden;
 
@@ -40,7 +40,7 @@
     left: 137px;
 
     width: 324px;
-    height: 324px;
+    // height: 324px;
   }
 }
 
@@ -91,9 +91,12 @@
 .hero-btn-wrapper {
   display: flex;
 }
-
+.hero-test {
+  position: relative;
+}
 .hero-numbers-wrapper {
-  position: absolute;
+  position: relative;
+
   top: 74px;
   right: 32px;
   z-index: 1;
