@@ -8,9 +8,9 @@
 
 // Тут прописать код для кнопок в Header (1 кнопка)
 
-.header-btn {
-  //min-width: 159px;
-  //height: 44px;
+.header__btn {
+  min-width: 159px;
+  height: 44px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.31;
@@ -22,7 +22,7 @@
   text-align: center;
 
   color: $accent-color;
-  background: $white-color;
+  background-color: $white-color;
   border-radius: 22px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,6 +33,10 @@
   }
 }
 
+.header__btn-icon {
+  margin-left: 12px;
+}
+
 // Тут прописать код для кнопок в Hero (3 кнопки)
 
 .hero-btn {
@@ -40,7 +44,7 @@
   border: none;
   cursor: pointer;
 
-  font-family: DM Sans;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 8px;

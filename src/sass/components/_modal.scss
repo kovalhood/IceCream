@@ -37,7 +37,7 @@
   min-height: 400px;
   background-color: $white-color;
   box-shadow: 0px 8px 30px rgba(250, 20, 67, 0.1);
-  border-radius: 4px;
+  border-radius: 24px;
   padding: 40px;
 
   @media screen and (max-width: 1199px) {
@@ -161,27 +161,6 @@
   }
 }
 
-.modal-btn {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.31;
-  display: block;
-  margin: 0 auto;
-  letter-spacing: 0.06em;
-  color: $white-color;
-  background: $accent-color-secondary;
-  border-radius: 22px;
-  padding: 10px 55px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
-}
-
 .check-text {
   font-size: 12px;
   line-height: 1.17;
@@ -221,6 +200,34 @@
 .check-color-href {
   color: $accent-color;
 }
+
+ .modal-btn {
+   font-weight: 700;
+   font-style: normal;
+   font-size: 16px;
+   line-height: 1.31;
+   letter-spacing: 0.06em;
+   color: $white-color;
+   background-color: $accent-color-secondary;
+   border-radius: 22px;
+
+   padding: 0 37px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+     background-color: $accent-color;
+   }
+ }
+
+ .modal-btn-icon {
+   margin-left: 12px;
+ }
 
 
 // Тут прописать код для модалки в Products (3 штуки с разными текстами)
