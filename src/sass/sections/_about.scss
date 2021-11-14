@@ -2,3 +2,75 @@
 // Размещать кнопку на странице с помощью scss (margin и прочеее) будете сами, у нее будет только дизайн
 
 // Сетку задаем с помощью отрицательных margin
+// .about__label,
+// .about__title {
+// text-align: center;
+// }
+
+// .about__img {
+//     display: block;
+//     margin: 0 auto 46px;
+//     max-width: 280px;
+// }
+
+// img {
+//     @media screen and (max-width: 767px) {
+//         margin: 0 auto;
+//     }
+// }
+
+// .about__content {
+//     position: relative;
+// }
+
+// .about__text {
+//     position: relative;
+//     z-index: 2;
+//     list-style: none;
+
+//     padding: 0 30px;
+//     margin: 0;
+
+//     font-weight: 500;
+//     font-size: 12px;
+//     line-height: 162%;
+
+//     color: $text-black-secondary;
+// }
+
+// .about__item:first-child {
+//     color: $text-black;
+//     margin-bottom: 47px;
+// }
+
+// .about__item:last-child {
+//     margin-top: 20px;
+// }
+
+// .about--background-img {
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 0;
+//     left: 0;
+//     width: 112%;
+//     height: 200px;
+//     margin-left: -20px;
+
+//     transform: translateY(35%);
+
+//     background-image: url(../images/mob/about/mob-about-backgroundimg.png);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+
+//     @media screen and (min-width: 393px) {
+//         width: 109%;
+//     }
+
+//     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+//         background-image: url(../images/mob/about/mob-about-backgroundimg-2x.png);
+//     }
+
+//     @media screen and (min-width: 481px) {
+//         display: none;
+//     }
+// }
