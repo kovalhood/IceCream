@@ -15,7 +15,7 @@
 
   @media screen and (min-width: $tablet) {
     padding-top: 102px;
-    padding-bottom: 59px;
+    padding-bottom: 34px;
     background-size: 324px 324px;
     background-position: left 307px top 31px;
   }
@@ -59,16 +59,20 @@
   @media screen and (min-width: $tablet) {
     font-size: 22px;
     max-width: 162px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+
+    font-size: 22px;
+    line-height: 1.14;
   }
 }
 
 .hero-title-accent {
   color: $accent-color;
   font-size: 48px;
-  line-height: 96.5%;
+  line-height: 0.965;
   @media screen and (min-width: $tablet) {
     font-size: 34px;
+    line-height: 0.905;
   }
 }
 .hero-img-icecrem {
@@ -77,7 +81,7 @@
   right: 32px;
   z-index: 2;
   @media screen and (min-width: $tablet) {
-    right: 203px;
+    right: 247px;
     width: 143px;
     height: 336px;
   }
@@ -132,6 +136,9 @@
   color: $white-color;
   margin-bottom: 14px;
 }
+.hero-number-text:last-child {
+  margin-bottom: 0;
+}
 
 .hero-txt {
   // position: relative;
@@ -140,7 +147,6 @@
   line-height: 1.5;
   color: $white-color;
   max-width: 114px;
-  bottom: 59px;
 
   z-index: 3;
   @media screen and (max-width: $tablet) {
@@ -149,9 +155,11 @@
 }
 
 .hero-img-milk {
-  position: absolute;
-  bottom: 10px;
-  left: 32px;
+  // position: absolute;
+  // display: flex;
+  // justify-content: start;
+  margin-top: -114px;
+  // left: 34px;
   z-index: 1;
   @media screen and (max-width: $tablet) {
     display: none;
@@ -160,8 +168,11 @@
 
 .hero-img-girl {
   position: absolute;
-  bottom: 1px;
-  right: 34px;
+  bottom: 0;
+  right: 84px;
+
+  // margin-left: 95%;
+  // margin-bottom: -34px;
   z-index: 2;
   @media screen and (max-width: $tablet) {
     display: none;
