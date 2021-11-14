@@ -14,55 +14,61 @@
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
 </head>
+
 <body>
-<header class="page-header">
-  <div class="container">
-    <nav class="page-header__nav">
-        <a href="">
+  <header class="page-header__nav">
+    <div class="container">
+      <nav class="page-header__nav">
+        <a href="./index.html">
           <picture>
-            <source srcset="/images/common/logo.png 1x, /images/common/logo@2x.png" type="" media="(min-width: 280px)" />
-            <img class="page-header__img" src="/images/common/logo.png" alt="Логотип Icecream" />
+            <source srcset="/images/common/logo.png 1x, /images/common/logo-2x.png" type=""
+              media="(min-width: 280px)" />
+            <img class="page-header__img" src="/images/common/logo.png" alt="Логотип Icecream"/>
           </picture>
         </a>
-        <ul class="page-header__nav-list list">
-        <li class="page-header__nav-item"><a href="./index.html" class="link current page-header__nav-link">Home</a></li>
-        <li class="page-header__nav-item"><a href="#About us" class="link page-header__nav-link">About us</a></li>
-        <li class="page-header__nav-item"><a href="#How it’s made?" class="link page-header__nav-link">How it’s made?</a></li>
-        <li class="page-header__nav-item"><a href="#Our products" class="link page-header__nav-link">Our products</a></li>
-        <li class="page-header__nav-item"><a href="#Contact" class="link page-header__nav-link">Contact</a></li>
+        <button class="page-header__tablet-button" type="button">Buy now </button>
         <button class="header__button" type="button"></button>
+        <ul class="page-header__nav-list list">
+          <li class="page-header__nav-item"><a href="./index.html" class="link current page-header__nav-link">Home</a>
+          </li>
+          <li class="page-header__nav-item"><a href="#About-us" class="link page-header__nav-link">About us</a></li>
+          <li class="page-header__nav-item"><a href="#How-it’s-made?" class="link page-header__nav-link">How it’s made?</a></li>
+          <li class="page-header__nav-item"><a href="#Our-products" class="link page-header__nav-link">Our products</a>
+          </li>
+          <li class="page-header__nav-item"><a href="#Contact" class="link page-header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button type="button" class="menu-btn menu-btn--open js-open-menu" aria-expanded="false">
+      <img class="menu-icon" src="/images/common/menu.png" width="20" height="12" alt="Открывает мобильное меню"/>
+    </button>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <ul class="mobile-menu__list list">
+        <button class="header-mobile-button" type="button">Buy now</button>
+        <hr color="#E18298" size="1px solid">
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link mob-current">Home</a></li>
+        <hr color="#E18298" size="1px solid">
+        <li class="mobile-menu__item"><a href="About-us" class="mobile-menu__link link">About us</a></li>
+        <hr color="#E18298" size="1px solid">
+        <li class="mobile-menu__item"><a href="#How-it’s-made?" class="mobile-menu__link link">How it’s made?</a></li>
+        <hr color="#E18298" size="1px solid">
+        <li class="mobile-menu__item"><a href="#Our-products" class="mobile-menu__link link">Our products</a></li>
+        <hr color="#E18298" size="1px solid">
+        <li class="mobile-menu__item"><a href="#Contact" class="mobile-menu__link link">Contact</a></li>
+        <hr color="#E18298" size="1px solid">
       </ul>
-    </nav>
-  </div>
-  <button type="button" class="menu-btn menu-btn--open js-open-menu" aria-expanded="false">
-    <img class="menu-icon" src="/images/common/menu.png" width="20" height="12" aria-label="Открывает мобильное меню"/>
-  </button>
- <button class="header-tablet-button" type="button"></button>
-  <div class="mobile-menu js-menu-container" id="mobile-menu">
-    <ul class="mobile-menu-list list">
-      <button class="header-mobile-button" type="button"></button>
-      <hr color="#E18298" size="1px solid">
-      <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link mob-current">Home</a></li>
-      <hr color="#E18298" size="1px solid">
-      <li class="mobile-menu-item"><a href="About us" class="mobile-menu-link link">About us</a></li>
-      <hr color="#E18298" size="1px solid">
-      <li class="mobile-menu-item"><a href="#How it’s made?" class="mobile-menu-link link">How it’s made?</a></li>
-      <hr color="#E18298" size="1px solid">
-      <li class="mobile-menu-item"><a href="#Our products" class="mobile-menu-link link">Our products</a></li>
-      <hr color="#E18298" size="1px solid">
-      <li class="mobile-menu-item"><a href="#Contact" class="mobile-menu-link link">Contact</a></li>
-      <hr color="#E18298" size="1px solid">
-    </ul>
       <button type="button" class="menu-btn menu-btn--close js-close-menu" aria-expanded="true">
-        <img class="menu-icon" src="/images/common/close.png" width="13.48" height="14" aria-label="Закрыввает мобильное меню"/>
-  </button>
-  </div>
-</header>
+        <img class="menu-icon" src="/images/common/close.png" width="20" height="20" alt="Закрыввает мобильное меню"/>
+      </button>
+    </div>
+  </header>
 
-<script src="/js/mobile-menu.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"></script>
+  <script src="/js/mobile-menu.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
+
 
