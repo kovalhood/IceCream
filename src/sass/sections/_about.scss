@@ -37,8 +37,6 @@ img {
     line-height: 162%;
 
     color: $text-black-secondary;
-
-    
 }
 
 .about__item:first-child {
@@ -59,7 +57,7 @@ img {
     height: 200px;
     margin-left: -20px;
 
-transform: translateY(35%);
+    transform: translateY(35%);
 
     background-image: url(../../src/images/mob/about/mob-about-backgroundimg.png);
     background-repeat: no-repeat;
