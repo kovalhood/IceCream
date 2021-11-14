@@ -1,10 +1,74 @@
 // Кнопки отдавать людям в их блоки в 2 этапа: сначала без модального окна, потом с ним
 // Кнопкам не надо прописывать положение на странице, это потом люди в своих блоках сделают. Тут только дизайн
 
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
 // Тут прописать код для кнопок в Header (1 кнопка)
+
+.header-btn {
+  //min-width: 159px;
+  //height: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.31;
+
+  padding: 0 37px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: $accent-color;
+  background: $white-color;
+  border-radius: 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
 
 // Тут прописать код для кнопок в Hero (3 кнопки)
 
+.hero-btn {
+  position: relative; //z index працює тільки з позішин релатів
+  border: none;
+  cursor: pointer;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.3;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.hero-btn3 {
+  color: $white-color;
+  background-color: $accent-color;
+}
+.hero-btn3:hover,
+.hero-btn3:focus {
+  background-color: #c7133e;
+}
+
+.hero-btn2 {
+  margin-left: 8px;
+  color: $accent-color;
+  background-color: $white-color;
+}
+.hero-btn2:hover,
+.hero-btn2:focus {
+  background-color: $button-hover-color;
+}
 // Тут прописать код для кнопок в Products (Там эти кнопки скачиваются картинками из макета, так что ее просто надо будет вставить в кнопку как background-image)
 
 // Тут прописать код для кнопок в About (1 кнопка)
