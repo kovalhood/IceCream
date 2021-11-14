@@ -9,29 +9,29 @@
 // Тут прописать код для кнопок в Header (1 кнопка)
 
 .header__btn {
-  min-width: 159px;
-  height: 44px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.31;
+    min-width: 159px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.31;
 
-  padding: 0 37px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  text-align: center;
+    padding: 0 37px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
 
-  color: $accent-color;
-  background-color: $white-color;
-  border-radius: 22px;
+    color: $accent-color;
+    background-color: $white-color;
+    border-radius: 22px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    background-color: $button-hover-color;
+    &:hover,
+    &:focus {
+      background-color: $button-hover-color;
+    }
   }
-}
 
 .header__btn-icon {
   margin-left: 12px;
@@ -72,6 +72,16 @@
 .hero-btn2:hover,
 .hero-btn2:focus {
   background-color: $button-hover-color;
+}
+
+.hero__round-button {
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  background-image: url(../images/common/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 // Тут прописать код для кнопок в Products (Там эти кнопки скачиваются картинками из макета, так что ее просто надо будет вставить в кнопку как background-image)
 
