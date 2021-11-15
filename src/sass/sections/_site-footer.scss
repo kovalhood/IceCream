@@ -20,11 +20,9 @@
     background-color: $review-pseudo-elements;
     @media screen and (min-width: $tablet) {
       bottom: 73px;
-      padding: 0 2px;
     }
     @media screen and (min-width: $desktop) {
       bottom: 45px;
-      padding: 0;
     }
   }
   &__box {
@@ -84,7 +82,7 @@
       max-width: 340px;
       padding-bottom: 120px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
       font-size: 58px;
       max-width: 477px;
       padding-bottom: 106px;
@@ -108,14 +106,7 @@
       margin-right: 25px;
     }
   }
-  &__icons-item:last-child {
-    @media screen and (min-width: $tablet) {
-      margin-right: 2px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 6px;
-    }
-  }
+
   &__icon-link {
     position: relative;
     display: block;
@@ -149,13 +140,15 @@
       }
     }
     &--telegram {
-      top: 8px;
-      left: 5px;
+      width: 25px;
+      height: 20px;
+      top: 6px;
+      left: 2px;
       @media screen and (min-width: $tablet) {
-        width: 20px;
-        height: 16px;
-        top: 9px;
-        left: 6px;
+        width: 27px;
+        height: 21px;
+        top: 6px;
+        left: 2px;
       }
     }
     &--facebook {
@@ -210,13 +203,9 @@
   }
 
   &__item-copyright {
-    padding-left: 59px;
-    padding-right: 71px;
+    align-items: center;
     padding-bottom: 25px;
     @media screen and (min-width: $tablet) {
-      align-items: center;
-      padding-left: 0;
-      padding-right: 0;
       padding-bottom: 18px;
     }
     @media screen and (min-width: $desktop) {
