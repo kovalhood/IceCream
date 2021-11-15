@@ -2,7 +2,7 @@
     background-color: $sections-background;
 }
 
-.advantages-list {
+.advantages {
     display: flex;
     flex-direction: column;
     @media screen and (min-width: $tablet) {
@@ -11,16 +11,23 @@
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
         margin-left: -60px;
     }
+    @media screen and (min-width: $desktop) {
+        margin-left: -30px; 
+    }
 }
 
-.advantages-item {
+.advantages__item {
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
         flex-basis: calc(100% / 3 - 60px);
         margin-left: 60px;
       }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100% / 3 - 30px);
+        margin-left: 30px;
+    }
 }
 
-.advantages-item-title {
+.advantages__title {
     color: $accent-color;
     font-family: 'Titan One', cursive;
     font-weight: 400;
@@ -28,14 +35,20 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-top: 104px;
+    margin-top: 103px;
     margin-bottom: 20px;
-    
-    
-}
-
-.advantages-logo-milk {
     position: relative;
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        font-size: 48px;
+        line-height: 1.14;
+        margin-top: 86px;
+        margin-bottom: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 58px;
+        line-height: 1.13;
+        margin-top: 90px;
+    }
     &::before {
         position: absolute;
         content: "";
@@ -43,7 +56,13 @@
         background-image: url(../images/common/advantages/desktop-about-icon1.png);
         width: 33px;
         height: 50px;
-        top:-71px; 
+        top:-71px;
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        top: -92px;
+        } 
+        @media screen and (min-width: $desktop) {
+        top: -105px;
+        }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -53,9 +72,10 @@
         height: 50px;
     }
     }
+    
 }
 
-.advantages-logo-fruit {
+.advantages__logo-fruit {
     position: relative;
     &::before {
         position: absolute;
@@ -65,6 +85,12 @@
         width: 50px;
         height: 50px;
         top:-71px;
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+            top: -92px;
+            }
+        @media screen and (min-width: $desktop) {
+            top: -105px;
+            } 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -76,7 +102,7 @@
     }
 }
 
-.advantages-logo-sweet {
+.advantages__logo-sweet {
     position: relative;
     &::before {
         position: absolute;
@@ -86,6 +112,12 @@
         width: 44px;
         height: 50px;
         top:-71px;
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+            top: -92px;
+            }
+        @media screen and (min-width: $desktop) {
+                top: -105px;
+                } 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -97,14 +129,22 @@
     }
 }
 
-.advantages-item-text {
+.advantages__text {
     color: $text-black;
     font-family: DM Sans;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.66;
     @media screen and (max-width: $mobile) {
         max-width: 230px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.75;
     }
 }
