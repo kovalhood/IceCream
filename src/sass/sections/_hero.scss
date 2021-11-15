@@ -77,13 +77,17 @@
 }
 .hero-img-icecrem {
   position: absolute;
-  bottom: 0;
+  bottom: -160px;
   right: 32px;
   z-index: 2;
   @media screen and (min-width: $tablet) {
+    bottom: -34px;
     right: 247px;
     width: 143px;
     height: 336px;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 450px;
   }
 }
 
@@ -168,13 +172,16 @@
 
 .hero-img-girl {
   position: absolute;
-  bottom: 0;
-  right: 84px;
+  display: none;
 
-  // margin-left: 95%;
-  // margin-bottom: -34px;
-  z-index: 2;
-  @media screen and (max-width: $tablet) {
-    display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    bottom: -35px;
+    right: 35px;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 110px;
   }
 }
