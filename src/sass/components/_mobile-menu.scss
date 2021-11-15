@@ -67,9 +67,16 @@
 
 .mobile-menu__item {
   margin-top: 22px;
+  border-bottom: 1px solid #e18298;
+  padding-bottom: 11px;
+  border-width: 100%;
   &:not(:last-child) {
     margin-bottom: 22px;
   }
+  .mobile-menu__item:first-child {
+    border-top: 1px solid #e18298;
+  }
+
   .mobile-menu__item:hover,
   .mobile-menu__item:focus {
     color: $accent-color;
