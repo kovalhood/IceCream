@@ -1,1 +1,29 @@
 // Реализовать Masonry Layout Gallery
+.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/mob/gallery/mob-gallery.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media screen and (min-width: 320px) {
+    height: 122px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mob/gallery/mob-gallery-2x.png);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    height: 264px;
+    background-image: url(../images/tab/gallery/tab-gallery.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tab/gallery/tab-gallery-2x.png);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    height: 430px;
+    background-image: url(../images/desktop/gallery/desktop-gallery.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/gallery/desktop-gallery-2x.png);
+    }
+  }
+}
