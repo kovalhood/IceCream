@@ -1,7 +1,12 @@
-.page-header__nav {
-  position: relative;
+.page-header {
+  padding: 6px 0;
   background-color: $hero-background;
-  margin-left: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__nav-list {
@@ -37,19 +42,19 @@
 }
 
 .page-header__img {
-  padding-top: 14px;
   @media screen and (min-width: $tablet) {
-    margin-right: 27px; /*88px;*/
-    padding-right: 291px;
+    // margin-right: 27px; /*88px;*/
+    // padding-right: 291px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 34px;
-    padding-left: 20px;
-    padding-right: 61px;
+    // padding-left: 20px;
+    // padding-right: 61px;
   }
 }
 
 .header__button {
+  display: none;
+
   @media screen and (min-width: $desktop) {
     position: absolute;
     margin-left: 10px; /*110*/
@@ -71,16 +76,12 @@
 .page-header__tablet-button {
   display: none;
   @media screen and (min-width: $tablet) {
-    position: absolute;
+    display: block;
     width: 160px;
     height: 44px;
-    right: 34px;
-    top: 15px;
-    display: inline;
+
     border-radius: 22px;
     cursor: pointer;
-
-    margin: 0 auto 20px;
     padding: 0;
     background: $text-black-secondary;
     font-weight: 700;
