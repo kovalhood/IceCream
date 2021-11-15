@@ -1,2 +1,176 @@
-// Кнопки создавать не надо, их потом отдельно сбросит Юлия, их надо будет вставить 2 раза (сначала без модального окна, а потом с ним)
-// Размещать кнопки на странице с помощью scss (margin и прочеее) будете сами, у них будет только дизайн
+.hero {
+  position: relative;
+
+  padding-top: 137px;
+  padding-bottom: 160px;
+
+  background-color: $hero-background;
+}
+
+.hero-title {
+  position: relative;
+
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  max-width: 218px;
+  color: $white-color;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+
+  z-index: 3;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    max-width: 162px;
+    margin-bottom: 12px;
+
+    font-size: 22px;
+    line-height: 1.14;
+  }
+}
+
+.hero-title-accent {
+  color: $accent-color;
+  font-size: 48px;
+  line-height: 0.965;
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 0.905;
+  }
+}
+.hero-img-icecrem {
+  position: absolute;
+  bottom: -160px;
+  right: 32px;
+  z-index: 2;
+
+  @media screen and (min-width: $tablet) {
+    bottom: -34px;
+    right: 247px;
+    width: 143px;
+    height: 336px;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 450px;
+  }
+}
+
+.ellipse {
+  position: absolute;
+  left: 35px;
+  bottom: -85px;
+
+  height: 346px;
+  width: 346px;
+  border-radius: 50%;
+  background-color: $accent-color-secondary;
+
+  z-index: 1;
+  @media screen and (min-width: $tablet) {
+    left: 307px;
+    bottom: -46px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 475px;
+    bottom: -75px;
+  }
+}
+
+.hero-btn-wrapper {
+  display: flex;
+}
+.hero-title-number-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-numbers-wrapper {
+  position: relative;
+  z-index: 3;
+  text-align: right;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.hero-number {
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.145;
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $accent-color;
+}
+.hero-number::after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $white-color;
+
+  position: absolute;
+  transform: translate(-50%, -25%);
+  z-index: -1;
+}
+
+.hero-number-text {
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+
+  color: $white-color;
+  margin-bottom: 14px;
+}
+.hero-number-text:last-child {
+  margin-bottom: 0;
+}
+
+.hero-txt {
+  // position: relative;
+  margin-left: 120px;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $white-color;
+  max-width: 114px;
+
+  z-index: 3;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.hero-img-milk {
+  // position: absolute;
+  // display: flex;
+  // justify-content: start;
+  margin-top: -114px;
+  // left: 34px;
+  z-index: 1;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.hero-img-girl {
+  position: absolute;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    bottom: -35px;
+    right: 35px;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 110px;
+  }
+}

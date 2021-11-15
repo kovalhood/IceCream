@@ -4,10 +4,8 @@
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 320px;
 
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-  }
   @media screen and (min-width: $tablet) {
     width: 768px;
     padding-left: 34px;
