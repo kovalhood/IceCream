@@ -34,10 +34,12 @@
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     margin-top: 103px;
     margin-bottom: 20px;
     position: relative;
+    @media screen and (max-width: $tablet) {
+        text-transform: uppercase;
+    }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
         font-size: 48px;
         line-height: 1.14;
