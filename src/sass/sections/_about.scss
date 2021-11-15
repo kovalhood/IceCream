@@ -2,3 +2,169 @@
 // Размещать кнопку на странице с помощью scss (margin и прочеее) будете сами, у нее будет только дизайн
 
 // Сетку задаем с помощью отрицательных margin
+
+.about__subtitle {
+    @media screen and (min-width: $tablet) {
+        line-height: 1.15;
+
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.13;
+
+        margin-bottom: 15px;
+    }
+}
+
+.about__title {
+    margin-bottom: 26px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.13;
+
+        margin-bottom: 55px;
+    }
+}
+
+.about__content {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.about__img {
+    display: block;
+    margin: 0 auto 46px;
+    max-width: 280px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 0 17px 0 0;
+        max-width: 340px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 74px;
+        max-width: 516px;
+    }
+}
+
+.about__text {
+    position: relative;
+    z-index: 2;
+    list-style: none;
+
+    padding: 0 30px;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+
+    color: $text-black-secondary;
+
+    @media screen and (min-width: $tablet) {
+        width: 340px;
+        padding: 50px 0 0 0;
+
+        font-size: 14px;
+        line-height: calc(25 / 14);
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 463px;
+        padding: 51px 0 0 0;
+
+        font-size: 16px;
+        line-height: calc(28 / 16);
+        letter-spacing: 0.04em;
+    }
+}
+
+.about__item {
+    @media screen and (min-width: $tablet) {
+        &--desktop {
+        font-size: 14px;
+        line-height: calc(27 / 14);
+        letter-spacing: 0.04em;
+        }
+    }
+
+    &:first-child {
+        color: $text-black;
+        margin-bottom: 17px;
+
+        @media screen and (min-width: $tablet) {
+        margin-bottom: 27px;
+        }
+    }
+
+    &:last-child {
+        margin-top: 17px;
+
+        @media screen and (min-width: $tablet) {
+        letter-spacing: 0.04em;
+
+        margin-top: 27px;
+        }
+    }
+}
+
+.bcg {
+    position: relative;
+    width: 100%;
+}
+
+.bcg-img {
+    position: absolute;
+    z-index: 1;
+    top: -130px;
+    left: 0;
+
+    background-image: url(../images/mob/about/mob-about-backgroundimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 133px;
+
+    @media screen and (min-width: 393px) {
+        top: -140px;
+        height: 163px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mob/about/mob-about-backgroundimg-2x.png);
+    }
+
+    @media screen and (min-width: 481px) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+        top: -465px;
+
+        background-image: url(../images/desktop/about/desktop-about-backgroundimg.png);
+
+        width: 100%;
+        height: 534px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/about/desktop-about-backgroundimg-2x.png);
+        }
+
+        @media screen and (min-width: 1577px) {
+        top: -594px;
+        height: 650px;
+        }
+    }
+}
