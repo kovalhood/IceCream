@@ -7,38 +7,7 @@
   padding-bottom: 160px;
 
   background-color: $hero-background;
-  background-image: url(../images/common/ellipse.svg);
-  background-position: left 36px top 27px;
-  background-size: 344px 344px;
-  background-repeat: no-repeat;
-  z-index: 1;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 102px;
-    padding-bottom: 34px;
-    background-size: 324px 324px;
-    background-position: left 307px top 31px;
-  }
 }
-// .hero-ellipse {
-//   position: absolute;
-//   width: 346px;
-
-//   top: 27px;
-//   left: 36px;
-//   z-index: 1;
-//   // margin-right: -62px;
-
-//   // overflow: hidden;
-
-//   @media screen and (min-width: $tablet) {
-//     top: -32px;
-//     left: 137px;
-
-//     width: 324px;
-//     // height: 324px;
-//   }
-// }
 
 .hero-title {
   position: relative;
@@ -80,6 +49,7 @@
   bottom: -160px;
   right: 32px;
   z-index: 2;
+
   @media screen and (min-width: $tablet) {
     bottom: -34px;
     right: 247px;
@@ -91,9 +61,30 @@
   }
 }
 
+.ellipse {
+  position: absolute;
+  left: 35px;
+  bottom: -85px;
+
+  height: 346px;
+  width: 346px;
+  border-radius: 50%;
+  background-color: $accent-color-secondary;
+
+  z-index: 1;
+  @media screen and (min-width: $tablet) {
+    left: 307px;
+    bottom: -46px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 475px;
+    bottom: -75px;
+  }
+}
+
 .hero-btn-wrapper {
   display: flex;
-  margin-bottom: 66px;
 }
 .hero-title-number-wrapper {
   display: flex;
