@@ -13,11 +13,11 @@
   z-index: 999;
   text-align: start;
   transition: transform 250ms ease-in-out;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     right: 0;
     width: 380px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -39,10 +39,10 @@
     position: absolute;
     top: 32px;
     right: 20px;
-    @media screen and (min-width: 768px) {
-      right: 330px;
+    @media screen and (min-width: $tablet) {
+      right: 220px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       display: none;
     }
   }
@@ -126,7 +126,7 @@
   margin-top: 38px;
   padding: 0;
   justify-content: center;
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     width: 186px;
   }
 }

@@ -5,7 +5,7 @@
 .page-header__nav-list {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     padding-top: 50px;
     font-style: normal;
@@ -35,21 +35,20 @@
 }
 
 .page-header__img {
-  display: block;
   padding-top: 14px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 27px; /*88px;*/
     padding-right: 291px;
   }
-  @media screen and (min-width: 1280px) {
-    padding-top: 37px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 34px;
     padding-left: 20px;
     padding-right: 61px;
   }
 }
 
 .header__button {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     position: absolute;
     margin-left: 10px; /*110*/
     width: 159px;
@@ -69,11 +68,11 @@
 
 .page-header__tablet-button {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     position: absolute;
     width: 160px;
     height: 44px;
-    right: 140px;
+    right: 34px;
     top: 15px;
     display: inline;
     border-radius: 22px;
@@ -90,7 +89,7 @@
     color: $accent-color;
     transition: background-color 0.3s ease-out;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
