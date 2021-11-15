@@ -1,0 +1,245 @@
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-footer {
+  position: relative;
+  background-color: $sections-background;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 89px;
+    width: 100%;
+    height: 1px;
+    background-color: $review-pseudo-elements;
+    @media screen and (min-width: $tablet) {
+      bottom: 73px;
+      padding: 0 2px;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 45px;
+      padding: 0;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item--top {
+    /* homemade ice cream made */
+    max-width: 232px;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $accent-color-secondary;
+    padding-bottom: 17px;
+    @media screen and (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      max-width: 340px;
+      padding-bottom: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+
+      max-width: 472px;
+      padding-bottom: 15px;
+    }
+  }
+  &__item--bottom {
+    /* with passion */
+    max-width: 200px;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+    padding-bottom: 43px;
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.1;
+      letter-spacing: 0.06em;
+      max-width: 340px;
+      padding-bottom: 120px;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 58px;
+      max-width: 477px;
+      padding-bottom: 106px;
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 46px;
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__icons-item:not(:last-child) {
+    margin-right: 28px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 25px;
+    }
+  }
+  &__icons-item:last-child {
+    @media screen and (min-width: $tablet) {
+      margin-right: 2px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 6px;
+    }
+  }
+  &__icon-link {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $icon-hover-color;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    fill: $white-color;
+    &--github {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media screen and (min-width: $tablet) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &--telegram {
+      top: 8px;
+      left: 5px;
+      @media screen and (min-width: $tablet) {
+        width: 20px;
+        height: 16px;
+        top: 9px;
+        left: 6px;
+      }
+    }
+    &--facebook {
+      top: 7px;
+      left: 11px;
+      @media screen and (min-width: $tablet) {
+        height: 20px;
+        left: 12px;
+      }
+    }
+  }
+
+  /* Feel free to contact +61 (0) 383 766 284 */
+  &__item-tel {
+    padding-bottom: 65px;
+  }
+  &__tel {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: right;
+    color: $text-black;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.9;
+      letter-spacing: 0.01em;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__tel-link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.9;
+    color: $accent-color;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__item-copyright {
+    padding-left: 59px;
+    padding-right: 71px;
+    padding-bottom: 25px;
+    @media screen and (min-width: $tablet) {
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 18px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 10px;
+    }
+  }
+
+  /* © 2019 - IceCream. All Rights Reserved. */
+  &__copyright {
+    max-width: 150px;
+    text-align: center;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $text-black-secondary;
+    padding: 0 8px;
+    @media screen and (min-width: $tablet) {
+      max-width: 276px;
+      padding: 0;
+      line-height: 1.9;
+      letter-spacing: 0.02em;
+    }
+  }
+}
