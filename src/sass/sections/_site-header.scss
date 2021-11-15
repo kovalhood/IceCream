@@ -12,8 +12,10 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.3;
-    margin-right: 0;
+    right: 210px;
     align-items: center;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -52,7 +54,7 @@
     margin-left: 10px; /*110*/
     width: 159px;
     height: 44px;
-    right: 115px;
+    right: 0;
     top: 38px;
     background: $white-color;
     border-radius: 22px;
