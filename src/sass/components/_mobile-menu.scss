@@ -7,7 +7,6 @@
   height: 100vh;
   padding: 32px 24px;
   display: flex;
-  justify-content: space-between;
   background-color: $mobile-menu-color;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -73,9 +72,6 @@
   &:not(:last-child) {
     margin-bottom: 22px;
   }
-  .mobile-menu__item:first-child {
-    border-top: 1px solid #e18298;
-  }
 
   .mobile-menu__item:hover,
   .mobile-menu__item:focus {
@@ -85,7 +81,10 @@
 
 .mobile-menu__list {
   display: block;
-  margin-top: 32px;
+}
+
+.mobile-menu__list {
+  border-top: 1px solid #e18298;
 }
 
 .mobile-menu__link {
@@ -115,7 +114,6 @@
   width: 209px;
   height: 44px;
   left: 34px;
-  top: 60px;
 
   background: $white-color;
   border-radius: 22px;
@@ -128,7 +126,7 @@
   align-items: center;
   color: $accent-color;
 
-  margin: 0 auto 20px;
+  margin-top: 38px;
   padding: 0;
   justify-content: center;
   @media screen and(min-width: 768px) {
