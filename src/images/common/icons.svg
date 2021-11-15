@@ -32,5 +32,13 @@
       <path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round"
             stroke-linecap="round" stroke-width="6.4" d="M3.2 3.2 16 16 3.2 28.8"/>
     </symbol>
+    <symbol id="Vector-white" viewBox="0 0 26 32">
+      <path fill="none" stroke="#fff" style="stroke:var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round"
+            stroke-width="6.4" d="M5.171 3.2 19.341 16 5.171 28.8"/>
+    </symbol>
+    <symbol id="close" viewBox="0 0 32 32">
+      <path
+        d="m26.667 7.303-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"/>
+    </symbol>
   </defs>
 </svg>
