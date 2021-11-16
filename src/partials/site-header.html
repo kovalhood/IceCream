@@ -1,44 +1,63 @@
 <header class="page-header">
   <div class="container">
-    <div class="header-wrapper">
-      <nav>
+    <div class="page-header__wrapper">
+      <nav class="test">
         <a href="./index.html">
           <picture>
-            <source srcset="/images/common/logo.png 1x, /images/common/logo-2x.png 2x" type="image/png"
-              media="(min-width: 280px)" />
+            <source
+              srcset="/images/common/logo.png 1x, /images/common/logo-2x.png 2x"
+              type="image/png"
+              media="(min-width: 280px)"
+            />
             <img class="page-header__img" src="/images/common/logo.png" alt="Логотип Icecream" />
           </picture>
         </a>
-        <button class="header__button" type="button"></button>
-
-        <ul class="page-header__nav-list list">
-          <li class="page-header__nav-item">
-            <a href="./index.html" class="link current page-header__nav-link">Home</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a href="#About-us" class="link page-header__nav-link">About us</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a href="#How-it's-made?" class="link page-header__nav-link">How it's made?</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a href="#Our-products" class="link page-header__nav-link">Our products</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a href="#Contact" class="link page-header__nav-link">Contact</a>
-          </li>
-        </ul>
+        <div class="page-header__wrapper-list">
+          <ul class="page-header__nav-list list">
+            <li class="page-header__nav-item">
+              <a href="./index.html" class="link current page-header__nav-link">Home</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#About-us" class="link page-header__nav-link">About us</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#How-it's-made?" class="link page-header__nav-link">How it's made?</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#Our-products" class="link page-header__nav-link">Our products</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#Contact" class="link page-header__nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="header-wrapper">
+      <div class="page-header__wrapper">
         <button type="button" class="menu-btn menu-btn--open js-open-menu" aria-expanded="false">
-          <img class="menu-icon" src="/images/common/menu.svg" width="20" height="12" alt="Открывает мобильное меню" />
+          <img
+            class="menu-icon"
+            src="/images/common/menu.svg"
+            width="20"
+            height="12"
+            alt="Открывает мобильное меню"
+          />
         </button>
-        <button class="page-header__tablet-button" type="button">Buy now</button>
+        <button data-modal-open class="page-header__tablet-button" type="button">
+          Buy now
+          <svg class="vector" width="5.26" height="8">
+            <use href="/images/common/icons.svg#vector"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
   <div class="mobile-menu js-menu-container" id="mobile-menu">
-    <button class="header-mobile-button" type="button">Buy now</button>
+    <button data-modal-open class="page-header__mobile-button" type="button">
+      Buy now
+      <svg class="vector" width="5.26" height="8">
+        <use href="/images/common/icons.svg#vector"></use>
+      </svg>
+    </button>
     <ul class="mobile-menu__list list">
       <li class="mobile-menu__item">
         <a href="./index.html" class="mobile-menu__link link mob-current">Home</a>
@@ -57,7 +76,13 @@
       </li>
     </ul>
     <button type="button" class="menu-btn menu-btn--close js-close-menu" aria-expanded="true">
-      <img class="menu-icon" src="/images/common/close.svg" width="20" height="20" alt="Закрыввает мобильное меню" />
+      <img
+        class="menu-icon"
+        src="/images/common/close.svg"
+        width="20"
+        height="20"
+        alt="Закрыввает мобильное меню"
+      />
     </button>
   </div>
 </header>
