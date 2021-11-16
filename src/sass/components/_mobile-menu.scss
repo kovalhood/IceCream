@@ -138,9 +138,10 @@
 .page-header__mobile-button:hover,
 .page-header__mobile-button:focus {
   /*border: 1px solid $accent-color;*/
-  text-shadow: 1px 1px 2px #ecebeb;
-  background: #ecebeb;
   background-color: transparent;
+  text-shadow: 1px 1px 2px #ecebeb;
+  /*box-shadow: 0 0 10px rgb(212 20 67 / 50%);*/
+  background: #ecebeb;
 }
 
 button {
