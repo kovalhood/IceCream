@@ -13,6 +13,7 @@
   z-index: 999;
   text-align: start;
   transition: transform 250ms ease-in-out;
+
   @media screen and (min-width: $tablet) {
     right: 0;
     width: 380px;
