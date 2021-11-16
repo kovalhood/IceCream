@@ -39,19 +39,19 @@
     line-height: 1.2;
     text-transform: uppercase;
     color: $accent-color-secondary;
-    padding-bottom: 17px;
+    margin-bottom: 17px;
     @media screen and (min-width: $tablet) {
       font-size: 24px;
       line-height: 1.1;
       letter-spacing: 0.04em;
       max-width: 340px;
-      padding-bottom: 16px;
+      margin-bottom: 16px;
     }
     @media screen and (min-width: $desktop) {
       font-size: 30px;
 
       max-width: 472px;
-      padding-bottom: 15px;
+      margin-bottom: 15px;
     }
   }
   &__item--bottom {
@@ -65,26 +65,26 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent-color;
-    padding-bottom: 43px;
+    margin-bottom: 43px;
     @media screen and (min-width: $tablet) {
       font-size: 48px;
       line-height: 1.1;
       letter-spacing: 0.06em;
       max-width: 340px;
-      padding-bottom: 120px;
+      margin-bottom: 120px;
     }
     @media screen and (min-width: $desktop) {
       font-size: 58px;
       max-width: 477px;
-      padding-bottom: 106px;
+      margin-bottom: 106px;
     }
   }
   &__icons {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 46px;
+    margin-bottom: 46px;
     @media screen and (min-width: $desktop) {
-      padding-bottom: 50px;
+      margin-bottom: 50px;
     }
   }
 
@@ -126,7 +126,7 @@
 
   /* Feel free to contact +61 (0) 383 766 284 */
   &__item-tel {
-    padding-bottom: 65px;
+    margin-bottom: 65px;
   }
   &__tel {
     font-family: inherit;
@@ -175,12 +175,12 @@
 
   &__item-copyright {
     align-items: center;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     @media screen and (min-width: $tablet) {
-      padding-bottom: 18px;
+      margin-bottom: 18px;
     }
     @media screen and (min-width: $desktop) {
-      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
   }
 
