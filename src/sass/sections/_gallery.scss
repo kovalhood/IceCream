@@ -1,29 +1,100 @@
 // Реализовать Masonry Layout Gallery
-.gallery {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/mob/gallery/mob-gallery.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  @media screen and (min-width: 320px) {
-    height: 122px;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/mob/gallery/mob-gallery-2x.png);
+// .gallery {
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-image: url(../images/mob/gallery/mob-gallery.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+//   @media screen and (min-width: 320px) {
+//     height: 122px;
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(../images/mob/gallery/mob-gallery-2x.png);
+//     }
+//   }
+//   @media screen and (min-width: $tablet) {
+//     height: 264px;
+//     background-image: url(../images/tab/gallery/tab-gallery.png);
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(../images/tab/gallery/tab-gallery-2x.png);
+//     }
+//   }
+//   @media screen and (min-width: $desktop) {
+//     height: 430px;
+//     background-image: url(../images/desktop/gallery/desktop-gallery.png);
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(../images/desktop/gallery/desktop-gallery-2x.png);
+//     }
+//   }
+// }
+
+// .grid {
+//   max-width: 1280px;
+// }
+// .grid-item {
+//   float: left;
+//   width: 20%;
+//   height: 100%;
+//   border: 2px solid hsla(318, 93%, 47%, 0.5);
+//   border-radius: 5px;
+// }
+.gallery-section {
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+}
+.masonry {
+  background-color: none;
+  max-width: 1280px;
+  max-height: 430px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      transform: scale(1.25);
     }
   }
-  @media screen and (min-width: $tablet) {
-    height: 264px;
-    background-image: url(../images/tab/gallery/tab-gallery.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/tab/gallery/tab-gallery-2x.png);
-    }
+  .masonry-item__1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
   }
-  @media screen and (min-width: $desktop) {
-    height: 430px;
-    background-image: url(../images/desktop/gallery/desktop-gallery.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/gallery/desktop-gallery-2x.png);
-    }
+  .masonry-item__2 {
+    grid-column: 6 / 9;
+    grid-row: 1 / 6;
+  }
+  .masonry-item__3 {
+    grid-column: 9 / 13;
+    grid-row: 1 / 7;
+  }
+  .masonry-item__4 {
+    grid-column: 13 / -1;
+    grid-row: 1 / 7;
+  }
+  .masonry-item__5 {
+    grid-column: 1 / 6;
+    grid-row: 6 / -1;
+  }
+  .masonry-item__6 {
+    grid-column: 6 / 9;
+    grid-row: 6 / 11;
+  }
+  .masonry-item__7 {
+    grid-column: 6 / 9;
+    grid-row: 11 / -1;
+  }
+  .masonry-item__8 {
+    grid-column: 9 / 13;
+    grid-row: 7 / -1;
+  }
+  .masonry-item__9 {
+    grid-column: 13 / -1;
+    grid-row: 7 / -1;
   }
 }
