@@ -168,6 +168,20 @@
   }
 }
 
+.hero__round-button-position {
+  margin-left: 120px;
+  // margin-top: 7px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 264px;
+  }
+}
+.hero__round-button {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+// Тут прописать код для кнопок в Products (Там эти кнопки скачиваются картинками из макета, так что ее просто надо будет вставить в кнопку как background-image)
+
 .products__round-button-size {
   width: 40px;
   height: 40px;
