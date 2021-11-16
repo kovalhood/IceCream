@@ -51,8 +51,8 @@
 
 .menu-btn:hover,
 .menu-btn:focus {
-  border: 1px dashed $accent-color;
-  box-shadow: 0 8px 30px rgba(250, 20, 67, 0.1);
+  /* border: 1px dashed $accent-color;*/
+  box-shadow: 0 0 10px rgb(212 20 67 / 50%);
 }
 
 .menu-icon {
@@ -139,7 +139,7 @@
 .page-header__mobile-button:focus {
   border: 1px solid $accent-color;
   text-shadow: 1px 1px 2px pink;
-  box-shadow: 0 8px 30px rgba(250, 20, 67, 0.1);
+  box-shadow: 0 0 10px rgb(212 20 67 / 50%);
 }
 
 button {
