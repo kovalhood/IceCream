@@ -86,10 +86,11 @@
 
 .page-header__tablet-button:hover,
 .page-header__tablet-button:focus {
-  border: 1px solid $accent-color;
+  /*border: 1px solid $accent-color;*/
   background-color: transparent;
-  text-shadow: 1px 1px 2px pink;
-  box-shadow: 0 0 10px rgb(212 20 67 / 50%);
+  text-shadow: 1px 1px 2px #ecebeb;
+  /*box-shadow: 0 0 10px rgb(212 20 67 / 50%);*/
+  background: #ecebeb;
 }
 
 .vector {
