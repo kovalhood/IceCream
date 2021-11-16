@@ -327,6 +327,21 @@ address {
   }
 }
 
+.hero__round-button-position {
+  margin-left: 120px;
+}
+@media screen and (min-width: 1280px) {
+  .hero__round-button-position {
+    margin-left: 264px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__round-button {
+    display: none;
+  }
+}
+
 .products__round-button-size {
   width: 40px;
   height: 40px;
@@ -883,6 +898,20 @@ button {
   padding-bottom: 160px;
   background-color: #ffb8ca;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    overflow: visible;
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    overflow: visible;
+    padding-top: 84px;
+    padding-bottom: 56px;
+  }
+}
 
 .hero-title {
   position: relative;
@@ -900,10 +929,17 @@ button {
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 22px;
+    line-height: 1.14;
     max-width: 162px;
     margin-bottom: 12px;
-    font-size: 22px;
-    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 38px;
+    line-height: 1.16;
+    max-width: 277px;
+    margin-bottom: 25px;
   }
 }
 
@@ -915,6 +951,12 @@ button {
 @media screen and (min-width: 768px) {
   .hero-title-accent {
     font-size: 34px;
+    line-height: 0.905;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-title-accent {
+    font-size: 58px;
     line-height: 0.905;
   }
 }
@@ -936,6 +978,9 @@ button {
 @media screen and (min-width: 1280px) {
   .hero-img-icecrem {
     right: 450px;
+    bottom: 10px;
+    width: 236px;
+    height: 537px;
   }
 }
 
@@ -952,18 +997,32 @@ button {
 @media screen and (min-width: 768px) {
   .ellipse {
     left: 307px;
-    bottom: -46px;
+    bottom: -10px;
+    height: 324px;
+    width: 324px;
   }
 }
 @media screen and (min-width: 1280px) {
   .ellipse {
     left: 475px;
-    bottom: -75px;
+    bottom: -74px;
+    height: 538px;
+    width: 538px;
   }
 }
 
 .hero-btn-wrapper {
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .hero-btn-wrapper {
+    margin-bottom: 66px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-btn-wrapper {
+    margin-bottom: 112px;
+  }
 }
 
 .hero-title-number-wrapper {
@@ -972,13 +1031,14 @@ button {
 }
 
 .hero-numbers-wrapper {
-  position: relative;
-  z-index: 3;
-  text-align: right;
+  display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-numbers-wrapper {
-    display: none;
+    display: block;
+    position: relative;
+    z-index: 3;
+    text-align: right;
   }
 }
 
@@ -990,6 +1050,11 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+@media screen and (min-width: 1280px) {
+  .hero-number {
+    font-size: 46px;
+  }
 }
 
 .hero-number::after {
@@ -1009,7 +1074,13 @@ button {
   line-height: 1.25;
   text-align: right;
   color: #ffffff;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
+}
+@media screen and (min-width: 1280px) {
+  .hero-number-text {
+    font-size: 15px;
+    line-height: 1.3;
+  }
 }
 
 .hero-number-text:last-child {
@@ -1017,26 +1088,50 @@ button {
 }
 
 .hero-txt {
-  margin-left: 120px;
-  font-size: 8px;
-  line-height: 1.5;
-  color: #ffffff;
-  max-width: 114px;
-  z-index: 3;
+  display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-txt {
-    display: none;
+    display: block;
+    margin-left: 120px;
+    margin-bottom: 7px;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 114px;
+    z-index: 3;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-txt {
+    display: block;
+    margin-left: 265px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ffffff;
+    max-width: 200px;
+    z-index: 3;
   }
 }
 
 .hero-img-milk {
-  margin-top: -114px;
+  display: none;
+  margin-top: -130px;
   z-index: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-img-milk {
-    display: none;
+    display: block;
+    margin-top: -130px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-img-milk {
+    display: block;
+    margin-top: -110px;
+    width: 188px;
+    height: 191px;
   }
 }
 
@@ -1054,7 +1149,9 @@ button {
 }
 @media screen and (min-width: 1280px) {
   .hero-img-girl {
-    right: 110px;
+    right: 109px;
+    width: 293px;
+    height: 232px;
   }
 }
 
@@ -2461,4 +2558,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.2670ac7a.css.map */
+/*# sourceMappingURL=/icecream/src.2eafeada.css.map */
