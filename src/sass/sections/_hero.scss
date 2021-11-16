@@ -1,10 +1,17 @@
 .hero {
   position: relative;
+  overflow: hidden;
 
   padding-top: 137px;
   padding-bottom: 160px;
 
   background-color: $hero-background;
+
+  @media screen and (min-width: $tablet) {
+    overflow: visible;
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
 }
 
 .hero-title {
@@ -72,7 +79,9 @@
   z-index: 1;
   @media screen and (min-width: $tablet) {
     left: 307px;
-    bottom: -46px;
+    bottom: -10px;
+    height: 324px;
+    width: 324px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -83,6 +92,9 @@
 
 .hero-btn-wrapper {
   display: flex;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 66px;
+  }
 }
 .hero-title-number-wrapper {
   display: flex;
@@ -136,6 +148,7 @@
 .hero-txt {
   // position: relative;
   margin-left: 120px;
+  margin-bottom: 7px;
   font-size: 8px;
   line-height: 1.5;
   color: $white-color;
@@ -151,7 +164,7 @@
   // position: absolute;
   // display: flex;
   // justify-content: start;
-  margin-top: -114px;
+  margin-top: -130px;
   // left: 34px;
   z-index: 1;
   @media screen and (max-width: $tablet) {
