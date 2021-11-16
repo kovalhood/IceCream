@@ -159,5 +159,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open-menu]'),
+    closeModalBtn: document.querySelector('[data-modal-close-menu]'),
+    modal: document.querySelector('[data-modal]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
 },{}]},{},["RSqK"], null)
-//# sourceMappingURL=/icecream/modal.24f6e2db.js.map
+//# sourceMappingURL=/icecream/modal.14dde3e0.js.map
