@@ -492,7 +492,7 @@ address {
 }
 @media screen and (max-width: 1280px) {
   .modal {
-    max-width: 450px;
+    max-width: 440px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1105,7 +1105,6 @@ button {
   width: 346px;
   border-radius: 50%;
   background-color: #ffa5ba;
-  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .ellipse {
@@ -1242,7 +1241,7 @@ button {
 @media screen and (min-width: 768px) {
   .hero-img-milk {
     display: block;
-    bottom: -28px;
+    bottom: 0;
     z-index: 1;
   }
 }
@@ -1265,7 +1264,7 @@ button {
     display: block;
     bottom: -35px;
     right: 34px;
-    z-index: 2;
+    z-index: 22;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1727,6 +1726,9 @@ button {
   margin: 0 auto 46px;
   max-width: 280px;
 }
+.about__img--size {
+  max-width: none;
+}
 @media screen and (min-width: 768px) {
   .about__img {
     margin: 0 17px 0 0;
@@ -1743,6 +1745,11 @@ button {
 .about-right-column {
   padding: 0 30px;
 }
+@media screen and (min-width: 768px) {
+  .about-right-column {
+    padding: 0;
+  }
+}
 
 .about__text {
   position: relative;
@@ -1758,8 +1765,7 @@ button {
 @media screen and (min-width: 768px) {
   .about__text {
     width: 340px;
-    padding: 50px 0 0 0;
-    margin: 0 0 62px 0;
+    margin: 50px 0 62px 0;
     font-size: 14px;
     line-height: calc(25 / 14);
   }
@@ -1767,8 +1773,7 @@ button {
 @media screen and (min-width: 1280px) {
   .about__text {
     width: 463px;
-    padding: 51px 0 0 0;
-    margin: 0 0 45px 0;
+    margin: 50px 0 45px 0;
     font-size: 16px;
     line-height: calc(28 / 16);
     letter-spacing: 0.04em;
@@ -1861,6 +1866,11 @@ button {
 .advantages {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding: 0 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantages {
@@ -2751,4 +2761,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.fbef122d.css.map */
+/*# sourceMappingURL=/icecream/src.e25338be.css.map */
