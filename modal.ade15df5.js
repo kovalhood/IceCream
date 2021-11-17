@@ -118,11 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"RSqK":[function(require,module,exports) {
-(() => {
+function modal(openAttr, closeAttr, modalAttr) {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]')
+    openModalBtn: document.querySelector(openAttr),
+    closeModalBtn: document.querySelector(closeAttr),
+    modal: document.querySelector(modalAttr)
   };
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
@@ -130,48 +130,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
-})();
+}
 
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-locations-open]'),
-    closeModalBtn: document.querySelector('[data-modal-locations-close]'),
-    modal: document.querySelector('[data-modal-locations]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  modal('[data-modal-open]', '[data-modal-close]', '[data-modal]');
+  modal('[data-modal-open-menu]', '[data-modal-close-menu]', '[data-modal]');
+  modal('[data-modal-open-video]', '[data-modal-close-video]', '[data-modal-video]'); // Кнопки в Products
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
+  modal('[data-modal-open-products-1]', '[data-modal-close-products-1]', '[data-modal-products-1]');
+  modal('[data-modal-open-products-2]', '[data-modal-close-products-2]', '[data-modal-products-2]');
+  modal('[data-modal-open-products-3]', '[data-modal-close-products-3]', '[data-modal-products-3]'); //               // Кнопки в Contacts
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-franchise-open]'),
-    closeModalBtn: document.querySelector('[data-modal-franchise-close]'),
-    modal: document.querySelector('[data-modal-franchise]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  modal('[data-modal-locations-open]', '[data-modal-locations-close]', '[data-modal-locations]');
+  modal('[data-modal-franchise-open]', '[data-modal-franchise-close]', '[data-modal-franchise]'); //               // Кнопка в About
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-menu]'),
-    closeModalBtn: document.querySelector('[data-modal-close-menu]'),
-    modal: document.querySelector('[data-modal]')
-  };
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
+  modal('[data-modal-open-about]', '[data-modal-close-about]', '[data-modal-about]');
 })();
 },{}]},{},["RSqK"], null)
-//# sourceMappingURL=/icecream/modal.14dde3e0.js.map
+//# sourceMappingURL=/icecream/modal.ade15df5.js.map
