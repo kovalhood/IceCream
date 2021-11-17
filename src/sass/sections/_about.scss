@@ -5,15 +5,15 @@
 
 .about__subtitle {
   @media screen and (min-width: $tablet) {
-    line-height: 1.15;
+      line-height: 1.15;
 
-    margin-bottom: 16px;
+      margin-bottom: 16px;
   }
 
   @media screen and (min-width: $desktop) {
-    line-height: 1.13;
+      line-height: 1.13;
 
-    margin-bottom: 15px;
+      margin-bottom: 15px;
   }
 }
 
@@ -21,19 +21,19 @@
   margin-bottom: 26px;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 50px;
+      margin-bottom: 50px;
   }
 
   @media screen and (min-width: $desktop) {
-    line-height: 1.13;
+      line-height: 1.13;
 
-    margin-bottom: 55px;
+      margin-bottom: 55px;
   }
 }
 
 .about__content {
   @media screen and (min-width: $tablet) {
-    display: flex;
+      display: flex;
   }
 }
 
@@ -43,14 +43,18 @@
   max-width: 280px;
 
   @media screen and (min-width: $tablet) {
-    margin: 0 17px 0 0;
-    max-width: 340px;
+      margin: 0 17px 0 0;
+      max-width: 340px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-right: 74px;
-    max-width: 516px;
+      margin-right: 74px;
+      max-width: 516px;
   }
+}
+
+.about-right-column {
+  padding: 0 30px;
 }
 
 .about__text {
@@ -58,57 +62,63 @@
   z-index: 2;
   list-style: none;
 
-  margin: 0 30px 20px 30px;
+  padding: 0;
+  margin: 0 0 20px 0;
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.62;
+  line-height: 162%;
 
   color: $text-black-secondary;
 
   @media screen and (min-width: $tablet) {
-    width: 340px;
-    margin: 40px 30px 50px 30px;
+      width: 340px;
 
-    font-size: 14px;
-    line-height: calc(25 / 14);
+      padding: 50px 0 0 0;
+      margin: 0 0 62px 0;
+
+      font-size: 14px;
+      line-height: calc(25 / 14);
   }
 
   @media screen and (min-width: $desktop) {
-    width: 463px;
+      width: 463px;
 
-    font-size: 16px;
-    line-height: calc(28 / 16);
-    letter-spacing: 0.04em;
+      padding: 51px 0 0 0;
+      margin: 0 0 45px 0;;
+
+      font-size: 16px;
+      line-height: calc(28 / 16);
+      letter-spacing: 0.04em;
   }
 }
 
 .about__item {
   @media screen and (min-width: $tablet) {
-    &--desktop {
+      &--desktop {
       font-size: 14px;
       line-height: calc(27 / 14);
       letter-spacing: 0.04em;
-    }
+      }
   }
 
   &:first-child {
-    color: $text-black;
-    margin-bottom: 17px;
+      color: $text-black;
+      margin-bottom: 17px;
 
-    @media screen and (min-width: $tablet) {
+      @media screen and (min-width: $tablet) {
       margin-bottom: 27px;
-    }
+      }
   }
 
   &:last-child {
-    margin-top: 17px;
+      margin-top: 17px;
 
-    @media screen and (min-width: $tablet) {
+      @media screen and (min-width: $tablet) {
       letter-spacing: 0.04em;
 
       margin-top: 27px;
-    }
+      }
   }
 }
 
@@ -131,38 +141,38 @@
   height: 133px;
 
   @media screen and (min-width: 393px) {
-    top: -140px;
-    height: 163px;
+      top: -140px;
+      height: 163px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/mob/about/mob-about-backgroundimg-2x.png);
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/mob/about/mob-about-backgroundimg-2x.png);
   }
 
   @media screen and (min-width: 481px) {
-    display: none;
+      display: none;
   }
 
   @media screen and (min-width: $desktop) {
-    display: block;
-    top: -465px;
+      display: block;
+      top: -465px;
 
-    background-image: url(../images/desktop/about/desktop-about-backgroundimg.png);
+      background-image: url(../images/desktop/about/desktop-about-backgroundimg.png);
 
-    width: 100%;
-    height: 534px;
+      width: 100%;
+      height: 534px;
 
-    @media screen and (min-device-pixel-ratio: 2),
+      @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/desktop/about/desktop-about-backgroundimg-2x.png);
-    }
+      }
 
-    @media screen and (min-width: 1577px) {
+      @media screen and (min-width: 1577px) {
       top: -594px;
       height: 650px;
-    }
+      }
   }
 }
