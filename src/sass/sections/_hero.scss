@@ -81,7 +81,7 @@
     right: 450px;
     bottom: 0;
     width: 236px;
-    height: 537px;
+    height: 557px;
   }
 }
 
@@ -219,23 +219,25 @@
 }
 
 .hero-img-milk {
+  position: absolute;
   display: none;
-  margin-top: -130px;
+
   z-index: 1;
   @media screen and (min-width: $tablet) {
     display: block;
-    margin-top: -130px;
+    bottom: -28px;
+    z-index: 1;
   }
   @media screen and (min-width: $desktop) {
     display: block;
-    margin-top: -170px;
     width: 188px;
     height: 191px;
-    padding-bottom: 20px;
+    bottom: 76px;
+    z-index: 1;
   }
 }
 .hero__round-button-position {
-  margin-bottom: 56px;
+  // margin-bottom: 56px;
 }
 .hero-img-girl {
   position: absolute;
@@ -269,6 +271,11 @@
   padding: 7px 14px;
   border-radius: 20px;
   z-index: 3;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    // line-height: 1.28;
+    padding: 11px 22px;
+  }
 }
 
 .hero-btn3 {
