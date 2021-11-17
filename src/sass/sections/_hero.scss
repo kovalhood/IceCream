@@ -168,6 +168,10 @@
   position: absolute;
   transform: translate(-50%, -25%);
   z-index: -1;
+  @media screen and (min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .hero-number-text {
@@ -228,7 +232,6 @@
     width: 188px;
     height: 191px;
     padding-bottom: 20px;
-    margin-left: -94px;
   }
 }
 .hero__round-button-position {
@@ -251,4 +254,38 @@
     height: 232px;
     bottom: 0;
   }
+}
+
+// buttons
+.hero-btn {
+  position: relative; //z index працює тільки з позішин релатів
+
+  // font-family: DM Sans;
+  // font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.3;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.hero-btn3 {
+  color: $white-color;
+  background-color: $accent-color;
+}
+.hero-btn3:hover,
+.hero-btn3:focus {
+  background-color: #c7133e;
+}
+
+.hero-btn2 {
+  margin-left: 8px;
+  color: $accent-color;
+  background-color: $white-color;
+}
+.hero-btn2:hover,
+.hero-btn2:focus {
+  background-color: $button-hover-color;
 }
