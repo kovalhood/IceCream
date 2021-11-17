@@ -18,38 +18,22 @@
       </form>
     </div>
 
-    <picture>
-      <source
-        srcset="
-          ./images/mob/hero/mob-hero-icecream.png    1x,
-          ./images/mob/hero/mob-hero-icecream-2x.png 2x
-        "
-        type="image/jpeg"
-        media="(min-width: $mobile)"
-      />
-      <source
-        srcset="
+    <picture animate__animated animate__bounce>
+      <source srcset="
+                      ./images/desktop/hero/desktop-hero-icecream.png    1x,
+                      ./images/desktop/hero/desktop-hero-icecream-2x.png 2x
+                    " media="(min-width: 1280px)" />
+<source srcset="
           ./images/tab/hero/tab-hero-icecream.png    1x,
           ./images/tab/hero/tab-hero-icecream-2x.png 2x
-        "
-        type="image/jpeg"
-        media="(min-width: $tablet)"
-      />
-      <source
-        srcset="
-          ./images/desktop/hero/desktop-hero-icecream.png    1x,
-          ./images/desktop/hero/desktop-hero-icecream-2x.png 2x
-        "
-        type="image/jpeg"
-        media="(min-width: $desktop)"
-      />
-      <img
-        class="hero-img-icecrem animate__animated animate__bounce"
-        src="./images/mob/hero/mob-hero-icecream.png"
-        loading="lazy"
-        alt="Very tasty ice-cream"
-        width="171"
-      />
+        " media="(min-width: 768px)" />
+      <source srcset="
+          ./images/mob/hero/mob-hero-icecream.png    1x,
+          ./images/mob/hero/mob-hero-icecream-2x.png 2x
+        "  media="(min-width: 480px)" />
+         
+      <img class="hero-img-icecrem" src="./images/mob/hero/mob-hero-icecream.png"
+        loading="lazy" alt="Very tasty ice-cream"/>
     </picture>
 
     <!-- додали еліпс -->
@@ -64,50 +48,25 @@
       type="button"
     ></button>
 
-    <picture>
-      <source
-        srcset="./images/tab/hero/tab-hero-milk.png 1x, ./images/tab/hero/tab-hero-milk-2x.png 2x"
-        type="image/jpeg"
-        media="(min-width: $tablet)"
-      />
-      <source
-        srcset="
-          ./images/desktop/hero/desktop-hero-milk.png    1x,
-          ./images/desktop/hero/desktop-hero-milk-2x.png 2x
-        "
-        type="image/jpeg"
-        media="(min-width: $desktop)"
-      />
-      <img
-        class="hero-img-milk animate__animated animate__bounceInLeft"
-        src="./images/tab/hero/tab-hero-milk.png"
-        loading="lazy"
-        alt="white milk"
-        width="124"
-      />
+    <picture animate__animated animate__bounceInLeft>
+      <source srcset="./images/desktop/hero/desktop-hero-milk.png 1x, ./images/desktop/hero/desktop-hero-milk-2x.png 2x"
+        media="(min-width: 1280px)" />
+      <source srcset="./images/tab/hero/tab-hero-milk.png 1x, 
+                      ./images/tab/hero/tab-hero-milk-2x.png 2x" media="(min-width: 768px)"/>
+      
+      <img class="hero-img-milk" src="./images/tab/hero/tab-hero-milk.png"
+        loading="lazy" alt="white milk"/>
     </picture>
 
-    <picture>
-      <source
-        srcset="./images/tab/hero/tab-hero-girl.png 1x, ./images/tab/hero/tab-hero-girl-2x.png 2x"
-        type="image/jpeg"
-        media="(min-width: $tablet)"
-      />
-      <source
-        srcset="
-          ./images/desktop/hero/desktop-hero-girl.png    1x,
-          ./images/desktop/hero/desktop-hero-girl-2x.png 2x
-        "
-        type="image/jpeg"
-        media="(min-width: $desktop)"
-      />
-      <img
-        class="hero-img-girl animate__animated animate__bounceInRight"
-        src="./images/tab/hero/tab-hero-girl.png"
-        loading="lazy"
-        alt="cool girl"
-        width="166"
-      />
+    <picture animate__animated animate__bounceInRight>
+  <source srcset="./images/desktop/hero/desktop-hero-girl.png 1x, 
+                  ./images/desktop/hero/desktop-hero-girl-2x.png 2x" media="(min-width: 1280px)" />
+  <source srcset="./images/tab/hero/tab-hero-girl.png 1x, 
+                  ./images/tab/hero/tab-hero-girl-2x.png 2x" media="(min-width: 768px)"/>
+   
+      <img class="hero-img-girl" src="./images/tab/hero/tab-hero-girl.png"
+        loading="lazy" alt="cool girl"/>
+
     </picture>
   </div>
 </section>
