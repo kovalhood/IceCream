@@ -1680,7 +1680,7 @@ button {
 .bcg-img {
   position: absolute;
   z-index: 1;
-  top: -130px;
+  top: -193px;
   left: 0;
   background-image: url(/icecream/mob-about-backgroundimg.50a58ac0.png);
   background-repeat: no-repeat;
@@ -1690,7 +1690,7 @@ button {
 }
 @media screen and (min-width: 393px) {
   .bcg-img {
-    top: -140px;
+    top: -203px;
     height: 163px;
   }
 }
@@ -1707,7 +1707,7 @@ button {
 @media screen and (min-width: 1280px) {
   .bcg-img {
     display: block;
-    top: -465px;
+    top: -431px;
     background-image: url(/icecream/desktop-about-backgroundimg.fa6f8289.png);
     width: 100%;
     height: 534px;
@@ -2613,4 +2613,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.e0e5c83b.css.map */
+/*# sourceMappingURL=/icecream/src.6b336568.css.map */
