@@ -2303,21 +2303,17 @@ ul.slick-dots {
   }
 }
 
-.page-part:not(:last-child)::after {
-  content: "";
-  display: inline-block;
+.page-part:not(:last-child) {
+  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 25px;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(33, 33, 33, 0.2);
 }
 @media screen and (min-width: 768px) {
-  .page-part:not(:last-child)::after {
+  .page-part:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .page-part:not(:last-child)::after {
+  .page-part:not(:last-child) {
     margin-bottom: 32px;
   }
 }
@@ -2660,4 +2656,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.1f3000ee.css.map */
+/*# sourceMappingURL=/icecream/src.f5eb10d7.css.map */
