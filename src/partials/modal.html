@@ -38,9 +38,9 @@
       </div>
 
       <div class="modal-field">
-        <label for="user-name" class="input-label">Name</label>
+        <label for="name" class="input-label">Name</label>
         <span class="input-wrapper">
-          <input type="text" name="user-name" id="user-name" class="modal-input" />
+          <input type="text" name="user-name" id="name" class="modal-input" />
           <svg class="input-icon" width="18" height="18">
             <use href="./images/common/icons.svg#name"></use>
           </svg>
@@ -48,9 +48,9 @@
       </div>
 
       <div class="modal-field">
-        <label for="user-tel" class="input-label">Phone number</label>
+        <label for="tel" class="input-label">Phone number</label>
         <span class="input-wrapper">
-          <input type="tel" name="user-tel" id="user-tel" class="modal-input" />
+          <input type="tel" name="user-tel" id="tel" class="modal-input" />
           <svg class="input-icon" width="18" height="18">
             <use href="./images/common/icons.svg#tel"></use>
           </svg>
@@ -58,10 +58,10 @@
       </div>
 
       <div class="modal-field">
-        <label for="user-comment" class="input-label">Сomment</label>
+        <label for="comment" class="input-label">Сomment</label>
         <textarea
           name="user-comment"
-          id="user-comment"
+          id="comment"
           class="modal-comment"
           placeholder="Type text"
         ></textarea>
@@ -74,6 +74,22 @@
         </svg>
       </button>
     </form>
+  </div>
+</div>
+
+<!-- Модальное окно Header ("Круглая кнопка) -->
+
+<div class="backdrop is-hidden" data-modal-video>
+  <div class="modal modal-video">
+    <button type="button" class="close-modal-btn" data-modal-close-video>
+      <svg class="close-modal-icon" width="25" height="25">
+        <use href="./images/common/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal-title modal-title-video">The History of Ice Cream</p>
+    <iframe class="" width="380" height="315"
+            src="https://www.youtube.com/embed/53noEBeu9gQ?controls=0">
+    </iframe>
   </div>
 </div>
 
@@ -160,5 +176,67 @@
         </svg>
       </button>
     </form>
+  </div>
+</div>
+
+<!-- Модальное окно Products ("Ice cream") -->
+
+<div class="backdrop is-hidden" data-modal-products-1>
+  <div class="modal modal-pink">
+    <button type="button" class="close-modal-btn" data-modal-close-products-1>
+      <svg class="close-modal-icon" width="25" height="25">
+        <use href="./images/common/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal-title modal-title-pink">Ice cream</p>
+    <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus accusantium alias at commodi consequatur corporis delectus dolore enim eum expedita fuga fugiat harum hic id inventore iste laboriosam laborum libero nulla officiis possimus quia quis quod, ratione recusandae repellendus, rerum sit soluta tempore temporibus vel, velit voluptas. Accusantium, similique.</p>
+  </div>
+</div>
+
+<!-- Модальное окно Products ("Ice coffee") -->
+
+<div class="backdrop is-hidden" data-modal-products-2>
+  <div class="modal modal-yellow">
+    <button type="button" class="close-modal-btn" data-modal-close-products-2>
+      <svg class="close-modal-icon" width="25" height="25">
+        <use href="./images/common/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal-title modal-title-pink">Ice coffee</p>
+    <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aperiam autem delectus ea eaque et fuga harum, inventore itaque magni, quae quia reiciendis suscipit tempore tenetur, ullam. Ea eius error ratione reprehenderit voluptatibus. Alias dolore iusto maxime minus, natus non optio quaerat, quas, quis soluta vitae voluptate. Consectetur, omnis.</p>
+  </div>
+</div>
+
+<!-- Модальное окно Products ("Milkshakes") -->
+
+<div class="backdrop is-hidden" data-modal-products-3>
+  <div class="modal modal-green">
+    <button type="button" class="close-modal-btn" data-modal-close-products-3>
+      <svg class="close-modal-icon" width="25" height="25">
+        <use href="./images/common/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal-title modal-title-pink">Milkshakes</p>
+    <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi, architecto atque commodi consectetur corporis dolore dolores doloribus error explicabo hic illo impedit in inventore ipsum maiores minus molestiae nesciunt odio odit optio pariatur perferendis perspiciatis quae qui quibusdam recusandae sapiente sit sunt tempora tempore tenetur totam ullam ut.</p>
+  </div>
+</div>
+
+<!-- Модальное окно About ("Read more") -->
+
+
+<div class="backdrop is-hidden" data-modal-about>
+  <div class="modal modal-lightpink">
+    <button type="button" class="close-modal-btn" data-modal-close-about>
+      <svg class="close-modal-icon" width="25" height="25">
+        <use href="./images/common/icons.svg#close"></use>
+      </svg>
+    </button>
+    <p class="modal-title modal-title-pink modal-title-size">Tradition and love </p>
+    <ul class="about__text about__text--tablet">
+      <li class="about__item about__text--properties">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</li>
+      <li class="about__item about__item--desktop about__text--size">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</li>
+      <li class="about__item about__item--desktop about__text--size">Aliquam erat volutpat. Aenean accumsan.</li>
+      <li class="about__item about__item--desktop about__text--size">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti est expedita iusto magnam magni minima natus non quo reprehenderit tempore! Animi blanditiis consectetur, debitis excepturi fuga hic itaque iusto libero maiores nobis pariatur porro quaerat quasi.</li>
+    </ul>
   </div>
 </div>
