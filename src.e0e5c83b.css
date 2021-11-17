@@ -1611,20 +1611,26 @@ button {
   }
 }
 
+.about-right-column {
+  padding: 0 30px;
+}
+
 .about__text {
   position: relative;
   z-index: 2;
   list-style: none;
-  margin: 0 30px 20px 30px;
+  padding: 0;
+  margin: 0 0 20px 0;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.62;
+  line-height: 162%;
   color: #907e82;
 }
 @media screen and (min-width: 768px) {
   .about__text {
     width: 340px;
-    margin: 40px 30px 50px 30px;
+    padding: 50px 0 0 0;
+    margin: 0 0 62px 0;
     font-size: 14px;
     line-height: calc(25 / 14);
   }
@@ -1632,6 +1638,8 @@ button {
 @media screen and (min-width: 1280px) {
   .about__text {
     width: 463px;
+    padding: 51px 0 0 0;
+    margin: 0 0 45px 0;
     font-size: 16px;
     line-height: calc(28 / 16);
     letter-spacing: 0.04em;
@@ -2605,4 +2613,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.49a92415.css.map */
+/*# sourceMappingURL=/icecream/src.e0e5c83b.css.map */
