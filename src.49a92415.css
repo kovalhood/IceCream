@@ -353,7 +353,6 @@ address {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin: 0 30px;
   width: 176px;
   height: 44px;
   padding: 12px 0;
@@ -363,7 +362,6 @@ address {
   color: #d41443;
   background-color: #ffffff;
   border-radius: 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .about-button {
@@ -2607,4 +2605,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.1f89ca80.css.map */
+/*# sourceMappingURL=/icecream/src.49a92415.css.map */
