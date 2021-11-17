@@ -5,7 +5,9 @@
 .advantages {
   display: flex;
   flex-direction: column;
-
+  @media screen and (max-width: 767px) {
+    padding: 0 30px;
+  }
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     margin-left: -60px;
