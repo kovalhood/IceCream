@@ -2501,15 +2501,18 @@ ul.slick-dots {
   font-size: 12px;
   line-height: 1.86;
   color: #ffa5ba;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
   .working-tyme {
     font-size: 14px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
   .working-tyme {
     font-size: 16px;
+    margin-bottom: 32px;
   }
 }
 
@@ -2748,4 +2751,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.0872cc41.css.map */
+/*# sourceMappingURL=/icecream/src.fbef122d.css.map */
