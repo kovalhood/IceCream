@@ -190,6 +190,37 @@
 // Тут прописать код для кнопок в Products (Там эти кнопки скачиваются картинками из макета, так что ее просто надо будет вставить в кнопку как background-image)
 
 // Тут прописать код для кнопок в About (1 кнопка)
+.about-button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0 30px;
+  width: 176px;
+  height: 44px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: $accent-color;
+  background-color: #ffffff;
+  border-radius: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: calc(21 / 16);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
+.about-button__icon {
+  margin-left: 14px;
+}
 
 // Тут прописать код для кнопок в Contacts (2 кнопки)
 
