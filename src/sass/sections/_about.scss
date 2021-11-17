@@ -130,7 +130,7 @@
 .bcg-img {
   position: absolute;
   z-index: 1;
-  top: -130px;
+  top: -193px;
   left: 0;
 
   background-image: url(../images/mob/about/mob-about-backgroundimg.png);
@@ -141,7 +141,7 @@
   height: 133px;
 
   @media screen and (min-width: 393px) {
-      top: -140px;
+      top: -203px;
       height: 163px;
   }
 
@@ -157,7 +157,7 @@
 
   @media screen and (min-width: $desktop) {
       display: block;
-      top: -465px;
+      top: -431px;
 
       background-image: url(../images/desktop/about/desktop-about-backgroundimg.png);
 
