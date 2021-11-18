@@ -144,8 +144,10 @@
   background-image: url(../images/mob/about/mob-about-backgroundimg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
-  width: 100vw;
+  width: 100%;
+  max-width: 2560px;
   height: 133px;
 
   @media screen and (min-width: 393px) {
@@ -165,7 +167,7 @@
 
   @media screen and (min-width: $desktop) {
     display: block;
-    top: -431px;
+    top: -469px;
 
     background-image: url(../images/desktop/about/desktop-about-backgroundimg.png);
 
@@ -180,7 +182,26 @@
 
     @media screen and (min-width: 1577px) {
       top: -594px;
-      height: 650px;
+      height: 667px;
+    }
+
+    @media screen and (min-width: 1900px) {
+      top: -667px;
+      height: 770px;
+    }
+
+    @media screen and (min-width: 2210px) {
+      top: -735px;
+      height: 840px;
+    }
+
+    @media screen and (min-width: 2410px) {
+      height: 900px;
+    }
+
+    @media screen and (min-width: 2561px) {
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
