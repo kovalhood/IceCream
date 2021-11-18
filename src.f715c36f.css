@@ -995,6 +995,31 @@ button {
   color: #d41443;
 }
 
+.up__button {
+  padding: 0;
+  box-shadow: 0px 0px 2px 3px #ffa5ba;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(/icecream/arrow-right.5508ceb2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.up__button:hover, .up__button:focus {
+  box-shadow: 0px 0px 2px 5px #ffa5ba;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -2754,4 +2779,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.1f147d29.css.map */
+/*# sourceMappingURL=/icecream/src.f715c36f.css.map */
