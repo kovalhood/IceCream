@@ -95,7 +95,6 @@
   border-radius: 50%;
   background-color: $accent-color-secondary;
 
-  z-index: 1;
   @media screen and (min-width: $tablet) {
     left: 307px;
     bottom: -10px;
@@ -225,7 +224,7 @@
   z-index: 1;
   @media screen and (min-width: $tablet) {
     display: block;
-    bottom: -28px;
+    bottom: 0;
     z-index: 1;
   }
   @media screen and (min-width: $desktop) {
@@ -236,9 +235,7 @@
     z-index: 1;
   }
 }
-.hero__round-button-position {
-  // margin-bottom: 56px;
-}
+
 .hero-img-girl {
   position: absolute;
   display: none;
@@ -248,7 +245,7 @@
     bottom: -35px;
     right: 34px;
 
-    z-index: 2;
+    z-index: 22;
   }
 
   @media screen and (min-width: $desktop) {
