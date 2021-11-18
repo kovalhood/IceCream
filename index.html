@@ -29,7 +29,7 @@ function initMap() {
     map: map
   });
 }</script>
-  <link rel="stylesheet" href="/icecream/src.6c4d0bc0.css"></head>
+  <link rel="stylesheet" href="/icecream/src.379287d5.css"></head>
   <body>
     <header class="page-header">
   <div class="container">
@@ -125,6 +125,9 @@ function initMap() {
       </form>
     </div>
 
+    <!-- додали еліпс -->
+    <div class="ellipse"></div>
+
     <picture class="animate__animated animate__bounce">
       <source srcset="/icecream/desktop-hero-icecream.e03a0c80.png    1x,/icecream/desktop-hero-icecream-2x.e2fbc403.png 2x" media="(min-width: 1280px)">
       <source srcset="/icecream/tab-hero-icecream.1f9c6360.png    1x,/icecream/tab-hero-icecream-2x.41239f4d.png 2x" media="(min-width: 768px)">
@@ -132,9 +135,6 @@ function initMap() {
 
       <img class="hero-img-icecrem" src="/icecream/mob-hero-icecream.5b96ca77.png" loading="lazy" alt="Very tasty ice-cream">
     </picture>
-
-    <!-- додали еліпс -->
-    <div class="ellipse"></div>
 
     <p class="hero-txt">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -238,15 +238,15 @@ function initMap() {
     <h2 class="hidden">Advantages</h2>
     <ul class="advantages list">
       <li class="advantages__item">
-        <h3 class="advantages__title">721</h3>
+        <p class="advantages__title">721</p>
         <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
       </li>
       <li class="advantages__item">
-        <h3 class="advantages__title advantages__logo-fruit">16kg</h3>
+        <p class="advantages__title advantages__logo-fruit">16kg</p>
         <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
       </li>
       <li class="advantages__item">
-        <h3 class="advantages__title advantages__logo-sweet">84</h3>
+        <p class="advantages__title advantages__logo-sweet">84</p>
         <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
       </li>
     </ul>
@@ -350,13 +350,13 @@ function initMap() {
         </div>
 
         <ul class="page-part working list">
-          <li>
+          <li class="working-time--margin">
             <p class="working-days">Monday - Friday</p>
-            <p class="working-tyme">06:00 AM - 10:00 PM</p>
+            <p class="working-time">06:00 AM - 10:00 PM</p>
           </li>
           <li>
             <p class="working-days">Saturday - Sunday</p>
-            <p class="working-tyme">08:00 AM - 16:00 PM</p>
+            <p class="working-time">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
 
@@ -374,13 +374,13 @@ function initMap() {
         </div>
 
         <ul class="page-part working list">
-          <li>
+          <li class="working-time--margin">
             <p class="working-days">Monday - Friday</p>
-            <p class="working-tyme">06:00 AM - 10:00 PM</p>
+            <p class="working-time">06:00 AM - 10:00 PM</p>
           </li>
           <li>
             <p class="working-days">Saturday - Sunday</p>
-            <p class="working-tyme">08:00 AM - 16:00 PM</p>
+            <p class="working-time">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
 
@@ -398,13 +398,13 @@ function initMap() {
         </div>
 
         <ul class="page-part working list">
-          <li>
+          <li class="working-time--margin">
             <p class="working-days">Monday - Friday</p>
-            <p class="working-tyme">06:00 AM - 10:00 PM</p>
+            <p class="working-time">06:00 AM - 10:00 PM</p>
           </li>
           <li>
             <p class="working-days">Saturday - Sunday</p>
-            <p class="working-tyme">08:00 AM - 16:00 PM</p>
+            <p class="working-time">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
 
@@ -441,38 +441,36 @@ function initMap() {
         <p class="page-footer__item--top">homemade ice cream made</p>
         <p class="page-footer__item--bottom">with passion</p>
       </div>
-      <div>
-        <div class="page-footer__item">
-          <ul class="page-footer__icons list">
-            <li class="page-footer__icons-item">
-              <a class="page-footer__icon-link link" href="https://github.com/" target="_blank" rel="noreferrer noopener">
-                <svg class="page-footer__icon page-footer__icon--github" width="20px" height="20px">
-                  <use href="/icecream/icons.aabcf9e0.svg#github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="page-footer__icons-item">
-              <a class="page-footer__icon-link link" href="https://web.telegram.org/" target="_blank" rel="noreferrer noopener">
-                <svg class="page-footer__icon page-footer__icon--telegram" width="20px" height="20px">
-                  <use href="/icecream/icons.aabcf9e0.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="page-footer__icons-item">
-              <a class="page-footer__icon-link link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                <svg class="page-footer__icon page-footer__icon--facebook" width="20px" height="20px">
-                  <use href="/icecream/icons.aabcf9e0.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__item page-footer__item-tel">
-          <p class="page-footer__tel">
-            Feel free to contact<a class="page-footer__tel-link link" href="tel:+610383766284">
-              +61 (0) 383 766 284</a>
-          </p>
-        </div>
+      <div class="page-footer__item">
+        <ul class="page-footer__icons list">
+          <li class="page-footer__icons-item">
+            <a class="page-footer__icon-link link" href="https://github.com/" target="_blank" rel="noreferrer noopener">
+              <svg class="page-footer__icon page-footer__icon--github" width="20px" height="20px">
+                <use href="/icecream/icons.aabcf9e0.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__icons-item">
+            <a class="page-footer__icon-link link" href="https://web.telegram.org/" target="_blank" rel="noreferrer noopener">
+              <svg class="page-footer__icon page-footer__icon--telegram" width="20px" height="20px">
+                <use href="/icecream/icons.aabcf9e0.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__icons-item">
+            <a class="page-footer__icon-link link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+              <svg class="page-footer__icon page-footer__icon--facebook" width="20px" height="20px">
+                <use href="/icecream/icons.aabcf9e0.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__item page-footer__item-tel">
+        <p class="page-footer__tel">
+          Feel free to contact<a class="page-footer__tel-link link" href="tel:+610383766284">
+            +61 (0) 383 766 284</a>
+        </p>
       </div>
     </div>
     <div class="page-footer__item page-footer__item-copyright">
@@ -565,7 +563,7 @@ function initMap() {
       </svg>
     </button>
     <p class="modal-title modal-title-video">The History of Ice Cream</p>
-    <iframe class="" width="380" height="315" src="https://www.youtube.com/embed/53noEBeu9gQ?controls=0">
+    <iframe class="modal-video-size" width="380" height="315" src="https://www.youtube.com/embed/53noEBeu9gQ?controls=0">
     </iframe>
   </div>
 </div>
@@ -750,6 +748,6 @@ function initMap() {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
     <script src="/icecream/mobile-menu.09f5d969.js"></script>
     <script src="/icecream/modal.ade15df5.js"></script>
-    <script src="/icecream/src.048912f0.js"></script>
+    <script src="/icecream/src.a105c28d.js"></script>
   </body>
 </html>
