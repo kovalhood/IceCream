@@ -82,7 +82,8 @@
   @media screen and (min-width: $tablet) {
     width: 340px;
 
-    margin: 50px 0 62px 0;
+    padding: 50px 0 0 0;
+    margin: 0 0 62px 0;
 
     font-size: 14px;
     line-height: calc(25 / 14);
@@ -91,7 +92,8 @@
   @media screen and (min-width: $desktop) {
     width: 463px;
 
-    margin: 50px 0 45px 0;
+    padding: 51px 0 0 0;
+    margin: 0 0 45px 0;
 
     font-size: 16px;
     line-height: calc(28 / 16);
@@ -117,39 +119,36 @@
     }
   }
 
-  &:last-child {
-    margin-top: 17px;
+  &:nth-child(2n) {
+    margin-bottom: 17px;
 
     @media screen and (min-width: $tablet) {
       letter-spacing: 0.04em;
 
-      margin-top: 27px;
+      margin-bottom: 27px;
     }
   }
 }
 
 .bcg {
   position: relative;
-  width: 100%;
 }
 
 .bcg-img {
   position: absolute;
   z-index: 1;
-  top: -193px;
-  left: 0;
+  top: -228px;
+  left: 50%;
+  transform: translateX(-50%);
 
   background-image: url(../images/mob/about/mob-about-backgroundimg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 
-  width: 100vw;
-  height: 133px;
-
-  @media screen and (min-width: 393px) {
-    top: -203px;
-    height: 163px;
-  }
+  width: 100%;
+  max-width: 2560px;
+  height: 200px;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -157,18 +156,22 @@
     background-image: url(../images/mob/about/mob-about-backgroundimg-2x.png);
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 480px) {
+    top: -291px;
+    height: 319px;
+  }
+
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 
   @media screen and (min-width: $desktop) {
     display: block;
-    top: -431px;
+    top: -735px;
 
     background-image: url(../images/desktop/about/desktop-about-backgroundimg.png);
 
-    width: 100%;
-    height: 534px;
+    height: 1068px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -176,9 +179,8 @@
       background-image: url(../images/desktop/about/desktop-about-backgroundimg-2x.png);
     }
 
-    @media screen and (min-width: 1577px) {
-      top: -594px;
-      height: 650px;
+    @media screen and (min-width: 1900px) {
+      top: -805px;
     }
   }
 }
