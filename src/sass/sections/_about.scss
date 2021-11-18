@@ -82,7 +82,8 @@
   @media screen and (min-width: $tablet) {
     width: 340px;
 
-    margin: 50px 0 62px 0;
+    padding: 50px 0 0 0;
+    margin: 0 0 62px 0;
 
     font-size: 14px;
     line-height: calc(25 / 14);
@@ -91,7 +92,8 @@
   @media screen and (min-width: $desktop) {
     width: 463px;
 
-    margin: 50px 0 45px 0;
+    padding: 51px 0 0 0;
+    margin: 0 0 45px 0;
 
     font-size: 16px;
     line-height: calc(28 / 16);
@@ -117,13 +119,13 @@
     }
   }
 
-  &:last-child {
-    margin-top: 17px;
+  &:nth-child(2n) {
+    margin-bottom: 17px;
 
     @media screen and (min-width: $tablet) {
       letter-spacing: 0.04em;
 
-      margin-top: 27px;
+      margin-bottom: 27px;
     }
   }
 }
