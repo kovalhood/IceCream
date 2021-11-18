@@ -1766,7 +1766,8 @@ button {
 @media screen and (min-width: 768px) {
   .about__text {
     width: 340px;
-    margin: 50px 0 62px 0;
+    padding: 50px 0 0 0;
+    margin: 0 0 62px 0;
     font-size: 14px;
     line-height: calc(25 / 14);
   }
@@ -1774,7 +1775,8 @@ button {
 @media screen and (min-width: 1280px) {
   .about__text {
     width: 463px;
-    margin: 50px 0 45px 0;
+    padding: 51px 0 0 0;
+    margin: 0 0 45px 0;
     font-size: 16px;
     line-height: calc(28 / 16);
     letter-spacing: 0.04em;
@@ -1797,44 +1799,46 @@ button {
     margin-bottom: 27px;
   }
 }
-.about__item:last-child {
-  margin-top: 17px;
+.about__item:nth-child(2n) {
+  margin-bottom: 17px;
 }
 @media screen and (min-width: 768px) {
-  .about__item:last-child {
+  .about__item:nth-child(2n) {
     letter-spacing: 0.04em;
-    margin-top: 27px;
+    margin-bottom: 27px;
   }
 }
 
 .bcg {
   position: relative;
-  width: 100%;
 }
 
 .bcg-img {
   position: absolute;
   z-index: 1;
-  top: -193px;
-  left: 0;
+  top: -228px;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url(/icecream/mob-about-backgroundimg.50a58ac0.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 133px;
-}
-@media screen and (min-width: 393px) {
-  .bcg-img {
-    top: -203px;
-    height: 163px;
-  }
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  max-width: 2560px;
+  height: 200px;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .bcg-img {
     background-image: url(/icecream/mob-about-backgroundimg-2x.ac2f8c61.png);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
+  .bcg-img {
+    top: -291px;
+    height: 319px;
+  }
+}
+@media screen and (min-width: 768px) {
   .bcg-img {
     display: none;
   }
@@ -1842,10 +1846,9 @@ button {
 @media screen and (min-width: 1280px) {
   .bcg-img {
     display: block;
-    top: -431px;
+    top: -735px;
     background-image: url(/icecream/desktop-about-backgroundimg.fa6f8289.png);
-    width: 100%;
-    height: 534px;
+    height: 1068px;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
@@ -1853,10 +1856,9 @@ button {
     background-image: url(/icecream/desktop-about-backgroundimg-2x.76f4d108.png);
   }
 }
-@media screen and (min-width: 1280px) and (min-width: 1577px) {
+@media screen and (min-width: 1280px) and (min-width: 1900px) {
   .bcg-img {
-    top: -594px;
-    height: 650px;
+    top: -805px;
   }
 }
 
@@ -2762,4 +2764,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.d2a27265.css.map */
+/*# sourceMappingURL=/icecream/src.6c4d0bc0.css.map */
