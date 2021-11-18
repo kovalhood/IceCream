@@ -216,6 +216,7 @@ address {
   padding: 7px 14px;
   border-radius: 20px;
   z-index: 3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn3 {
@@ -2761,4 +2762,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.e25338be.css.map */
+/*# sourceMappingURL=/icecream/src.d2a27265.css.map */
