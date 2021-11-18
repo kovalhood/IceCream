@@ -124,4 +124,4 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
 require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream/src.b999a11b.js.map
+//# sourceMappingURL=/icecream/src.5f0a8028.js.map

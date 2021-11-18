@@ -906,10 +906,6 @@ address {
   color: #d41443;
 }
 
-.mob-current {
-  color: #d41443;
-}
-
 button {
   padding: 0;
   border: none;
@@ -977,8 +973,7 @@ button {
 }
 
 .page-header__menu-link:hover,
-.page-header__menu-link:focus,
-.link.current {
+.page-header__menu-link:focus {
   color: #d41443;
 }
 
@@ -2779,4 +2774,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.f715c36f.css.map */
+/*# sourceMappingURL=/icecream/src.deeb904a.css.map */
