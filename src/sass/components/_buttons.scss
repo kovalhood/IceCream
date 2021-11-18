@@ -190,6 +190,31 @@
   height: 40px;
 }
 
+.up__button {
+  padding: 0;
+  border: 1px solid #d41443;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/common/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 // Тут прописать код для кнопок в Products (Там эти кнопки скачиваются картинками из макета, так что ее просто надо будет вставить в кнопку как background-image)
 
 // Тут прописать код для кнопок в About (1 кнопка)
