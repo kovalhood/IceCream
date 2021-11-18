@@ -506,7 +506,6 @@ address {
 @media screen and (min-width: 1280px) {
   .modal {
     width: 528px;
-    min-height: 581px;
   }
 }
 @media screen and (max-height: 450px) {
@@ -786,7 +785,7 @@ address {
 }
 
 .modal .about__text--properties {
-  font-size: 23px;
+  font-size: 18px;
   line-height: 1.3;
   text-align: center;
   padding-top: 0;
@@ -794,13 +793,15 @@ address {
 }
 @media screen and (min-width: 768px) {
   .modal .about__text--properties {
-    font-size: 25px;
     line-height: 1.7;
   }
 }
 
 .modal .about__text--size {
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.62;
+  color: #907e82;
   text-align: center;
 }
 
@@ -1749,7 +1750,7 @@ button {
   margin: 0 0 20px 0;
   font-weight: 500;
   font-size: 12px;
-  line-height: 162%;
+  line-height: 1.62;
   color: #907e82;
 }
 @media screen and (min-width: 768px) {
@@ -2753,4 +2754,4 @@ ul.slick-dots {
   }
 }
 
-/*# sourceMappingURL=/icecream/src.379287d5.css.map */
+/*# sourceMappingURL=/icecream/src.1f147d29.css.map */
